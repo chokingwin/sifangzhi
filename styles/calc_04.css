@@ -20,6 +20,46 @@
     text-align: left;
 }
 
+/*itemSelect*/
+.itemSelect{
+    margin-top: 10px;
+    padding: 5px 5px;
+    border: #cccccc solid 1px;
+    height: 20px;
+}
+.itemSelect span{
+    float: left;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
+    width: 35px;
+    margin-right: 20px;
+}
+.itemSelect ul{
+    float: left;
+}
+.itemSelect li{
+    float: left;
+    margin-right: 10px;
+}
+.itemSelect a{
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    border: #cccccc solid 2px;
+    color: #000000;
+    padding: 0 5px;
+}
+.itemSelect a:hover{
+    border: #ff7077 solid 2px;
+}
+.itemSelect .selected{
+    background: url("../images/icon/selected.png") right bottom no-repeat;
+    border: #ff7077 solid 2px;
+}
+
 /*itemTable*/
 .itemTable{
     margin-top: 10px;
@@ -66,6 +106,23 @@
     border: none;
     display: none;
 }
+
+/*itemOne*/
+.itemOne{
+    border: #cccccc solid 1px;
+    margin: 5px 10px;
+}
+.itemOne input{
+    width: 100px;
+    height:20px;
+    border: #ff7077 solid 1px;
+    padding-left: 5px
+}
+.itemOne span{
+    margin: 0 5px;
+}
+
+
 /*calc*/
 .calc{
     height: 65px;

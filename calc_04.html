@@ -11,55 +11,87 @@
         <div class="item">
             <div class="itemTitle">喷绘</div>
             <div class="itemImg"></div>
+            <div class="itemSelect">
+                <div>
+                    <span>种类</span>
+                    <ul>
+                        <li><a href="javascript:void(0);" class="selected" onclick="SItemClick(this)" val="横幅" name="type">横幅</a></li>
+                        <li><a href="javascript:void(0);" onclick="SItemClick(this)" val="普通背胶海报" name="type">普通背胶海报</a></li>
+                        <li><a href="javascript:void(0);" onclick="SItemClick(this)" val="520灯布喷绘" name="type">520灯布喷绘</a></li>
+                        <li><a href="javascript:void(0);" onclick="SItemClick(this)" val="KT板" name="type">KT板</a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="itemTable">
-                <table>
-                    <tbody id="tb">
+                <div class="itemOne" style="display: block;">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td width="20%">规格</td>
+                                <td>
+                                    <ul>
+                                        <li><a href="javascript:void(0);" class="selected" onclick="SItemOneClick(this)" val="70" type="横幅"><=70</a></li>
+                                        <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="80" type="横幅"><=80</a></li>
+                                        <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="90" type="横幅"><=90</a></li>
+                                        <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="100" type="横幅"><=100</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="20%">米数</td>
+                                <td>
+                                    <input type="text" belong="横幅" onchange="inputChange(this)">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="itemOne"style="display: none;">
+                    <table>
+                        <tbody>
                         <tr>
-                            <td width="20%">种类</td>
+                            <td width="20%">规格</td>
                             <td>
                                 <ul>
-                                    <li><a href="javascript:void(0);" class="selected" onclick="SItemClick(this)" val="横幅" name="type">横幅</a></li>
-                                    <li><a href="javascript:void(0);" onclick="SItemClick(this)" val="普通背胶海报" name="type">普通背胶海报</a></li>
-                                    <li><a href="javascript:void(0);" onclick="SItemClick(this)" val="520灯布喷绘" name="type">520灯布喷绘</a></li>
-                                    <li><a href="javascript:void(0);" onclick="SItemClick(this)" val="KT板" name="type">KT板</a></li>
+                                    <li><a href="javascript:void(0);" class="selected" onclick="SItemOneClick(this)" val="A2" type="普通背胶海报">A2</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="A1" type="普通背胶海报">A1</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="A0" type="普通背胶海报">A0</a></li>
                                 </ul>
                             </td>
                         </tr>
                         <tr>
-                            <td>成品尺寸</td>
+                            <td width="20%">数量</td>
                             <td>
-                                <select name="chicun" onchange="SItemChange(this)">
-                                    <option value="90x54mm" selected>90x54mm</option>
-                                    <option value="90x140mm">90x140mm</option>
-                                    <option value="140x210mm">140x210mm</option>
-                                    <option value="210x285mm">210x285mm</option>
-                                    <option value="420x285mm">420x285mm</option>
-                                    <option value="420x570mm">420x570mm</option>
-                                </select>
+                                <input type="text" belong="普通背胶海报" onchange="inputChange(this)">
                             </td>
                         </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="itemOne" style="display: none;">
+                    <table>
+                        <tbody>
                         <tr>
-                            <td>印刷数量</td>
+                            <td width="20%">尺寸</td>
                             <td>
-                                <ul>
-                                    <li><a href="#" name="count" val="500" onclick="SItemClick(this)">500个</a></li>
-                                    <li><a href="#" class="selected" name="count" val="1000" onclick="SItemClick(this)">1000个</a></li>
-                                    <li><a href="#" name="count" val="2000" onclick="SItemClick(this)">2000个</a></li>
-                                    <li><a href="#" name="count" val="3000" onclick="SItemClick(this)">3000个</a></li>
-                                    <li><a href="#" name="count" val="5000" onclick="SItemClick(this)">5000个</a></li>
-                                    <li><a href="#" name="count" val="10000" onclick="SItemClick(this)">10000个</a></li>
-                                </ul>
+                                <input type="text" belong="520灯布喷绘" name="width" onchange="inputChange2(this)"><span>*</span><input type="text" belong="520灯布喷绘" name="height" onchange="inputChange2(this)">
                             </td>
                         </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="itemOne" style="display: none;">
+                    <table>
+                        <tbody>
                         <tr>
-                            <td>特殊工艺</td>
+                            <td width="20%">尺寸</td>
                             <td>
-                                <input type="checkbox" id="tsgy" name="tsgy" onclick="selectTsgy(this)">
-                                <span>特殊形状需要联系人工报价</span>
+                                <input type="text" belong="KT板" name="width" onchange="inputChange2(this)"><span>*</span><input type="text" belong="KT板" name="height" onchange="inputChange2(this)">
                             </td>
                         </tr>
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
+                </div>
             </div>
             <div class="calc">
                 <button type="button" class="calcBtn" onclick="calc()">计算报价</button>
@@ -83,6 +115,6 @@
     </div>
 
     <script src="js/jquery.min.js"></script>
-    <script src="js/calc_03.js"></script>
+    <script src="js/calc_04.js"></script>
 </body>
 </html>
