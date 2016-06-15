@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>【报价】名片</title>
+    <link type="text/css" rel="stylesheet" href="styles/reset.css">
+    <link type="text/css" rel="stylesheet" href="styles/calc_05.css">
+</head>
+<body>
+    <div class="mainContent">
+        <div class="item">
+            <div class="itemTitle">名片</div>
+            <div class="itemImg"></div>
+            <div class="itemSelect">
+                <div>
+                    <span>种类</span>
+                    <ul>
+                        <li><a href="javascript:void(0);" class="selected" onclick="SItemClick(this)" val="300克经典铜版纸" name="type">300克经典铜版纸</a></li>
+                        <li><a href="javascript:void(0);" onclick="SItemClick(this)" val="特种纸" name="type">特种纸</a></li>
+                        <li><a href="javascript:void(0);" onclick="SItemClick(this)" val="0.32mm厚度普通pvc" name="type">0.32mm厚度普通pvc</a></li>
+                        <li><a href="javascript:void(0);" onclick="SItemClick(this)" val="0.38mm厚度高档pvc" name="type">0.38mm厚度高档pvc</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="itemTable">
+                <div class="itemOne" style="display: block;">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td width="20%">材质</td>
+                                <td>
+                                    <ul>
+                                        <li><a href="javascript:void(0);" class="selected" onclick="SItemOneClick(this)" val="彩色不过胶" type="300克经典铜版纸">彩色不过胶</a></li>
+                                        <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="彩色过哑胶" type="300克经典铜版纸">彩色过哑胶</a></li>
+                                        <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="彩色过光胶" type="300克经典铜版纸">彩色过光胶</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="20%">数量</td>
+                                <td>
+                                    <ul>
+                                        <li><a href="javascript:void(0);" name="count" val="1" onclick="SItemClick(this)">1盒</a></li>
+                                        <li><a href="javascript:void(0);" class="selected" name="count" val="2" onclick="SItemClick(this)">2盒</a></li>
+                                        <li><a href="javascript:void(0);" name="count" val="5" onclick="SItemClick(this)">5盒</a></li>
+                                        <li><a href="javascript:void(0);" name="count" val="10" onclick="SItemClick(this)">10盒</a></li>
+                                        <li><a href="javascript:void(0);" name="count" val="20" onclick="SItemClick(this)">20盒</a></li>
+                                        <li><a href="javascript:void(0);" name="count" val="100" onclick="SItemClick(this)">100盒</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="itemOne"style="display: none;">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td width="20%">材质</td>
+                            <td>
+                                <ul>
+                                    <li><a href="javascript:void(0);" class="selected" onclick="SItemOneClick(this)" val="布纹纸" type="特种纸">布纹纸</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="荷兰纸" type="特种纸">荷兰纸</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="蛋壳白" type="特种纸">蛋壳白</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="安格纸" type="特种纸">安格纸</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="冰白纸" type="特种纸">冰白纸</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="刚古纸" type="特种纸">刚古纸</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="合成纸" type="特种纸">合成纸</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">数量</td>
+                            <td>
+                                <ul>
+                                    <li><a href="javascript:void(0);" class="selected" name="count" val="2" onclick="SItemClick(this)">2盒</a></li>
+                                    <li><a href="javascript:void(0);" name="count" val="5" onclick="SItemClick(this)">5盒</a></li>
+                                    <li><a href="javascript:void(0);" name="count" val="10" onclick="SItemClick(this)">10盒</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="itemOne" style="display: none;">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td width="20%">材质</td>
+                            <td>
+                                <ul>
+                                    <li><a href="javascript:void(0);" class="selected" onclick="SItemOneClick(this)" val="透明(单)" type="0.32mm厚度普通pvc">透明(单)</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="哑光白(单)" type="0.32mm厚度普通pvc">哑光白(单)</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="哑光白(双)" type="0.32mm厚度普通pvc">哑光白(双)</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">数量</td>
+                            <td>
+                                <ul>
+                                    <li><a href="javascript:void(0);" class="selected" name="count" val="2" onclick="SItemClick(this)">2盒</a></li>
+                                    <li><a href="javascript:void(0);" name="count" val="5" onclick="SItemClick(this)">5盒</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="itemOne" style="display: none;">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td width="20%">材质</td>
+                            <td>
+                                <ul>
+                                    <li><a href="javascript:void(0);" class="selected" onclick="SItemOneClick(this)" val="透明细磨砂" type="0.38mm厚度高档pvc">透明细磨砂</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="透明粗磨砂" type="0.38mm厚度高档pvc">透明粗磨砂</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="透明白墨单面" type="0.38mm厚度高档pvc">透明白墨单面</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="透明白墨双面" type="0.38mm厚度高档pvc">透明白墨双面</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="普通哑面" type="0.38mm厚度高档pvc">普通哑面</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="哑面磨砂" type="0.38mm厚度高档pvc">哑面磨砂</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="闪银名片哑面" type="0.38mm厚度高档pvc">闪银名片哑面</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="闪银名片光面" type="0.38mm厚度高档pvc">闪银名片光面</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="超高级名片铂金拉丝" type="0.38mm厚度高档pvc">超高级名片铂金拉丝</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="超高级名片流光溢彩" type="0.38mm厚度高档pvc">超高级名片流光溢彩</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">数量</td>
+                            <td>
+                                <ul>
+                                    <li><a href="javascript:void(0);" class="selected" name="count" val="2" onclick="SItemClick(this)">2盒</a></li>
+                                    <li><a href="javascript:void(0);" name="count" val="4" onclick="SItemClick(this)">4盒</a></li>
+                                    <li><a href="javascript:void(0);" name="count" val="5" onclick="SItemClick(this)">5盒</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="calc">
+                <button type="button" class="calcBtn" onclick="calc()">计算报价</button>
+            </div>
+            <div class="itemResult"></div>
+            <div class="itemTip">
+                <div class="tipTab">
+                    <ul>
+                        <li class="DetailsTCur"><a href="javascript:void(0);">制作须知</a></li>
+                        <li><a href="javascript:void(0);">配送方式</a></li>
+                        <li><a href="javascript:void(0);">售后保障</a></li>
+                    </ul>
+                </div>
+                <div class="tipContent">
+                    <div class="tipOne" style="background-color: red;display: block;">1</div>
+                    <div class="tipOne" style="background-color: blue;display: none;">2</div>
+                    <div class="tipOne" style="background-color: yellow;display: none;">3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/calc_05.js"></script>
+</body>
+</html>
