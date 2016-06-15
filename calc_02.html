@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>【报价】画册</title>
+    <link type="text/css" rel="stylesheet" href="styles/reset.css">
+    <link type="text/css" rel="stylesheet" href="styles/calc_02.css">
+</head>
+<body>
+    <div class="mainContent">
+        <div class="item">
+            <div class="itemTitle">画册</div>
+            <div class="itemImg"></div>
+            <div class="itemTable">
+                <table>
+                    <tbody id="tb">
+                        <tr>
+                            <td width="20%">材质</td>
+                            <td>
+                                <ul>
+                                    <li><a href="javascript:void(0);" class="selected" onclick="SItemClick(this)" val="铜版纸" name="caizhi">铜版纸</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemClick(this)" val="其它材质(哑粉纸、双胶纸、白卡纸等)需要联系人工报价" name="caizhi">其它材质(哑粉纸、双胶纸、白卡纸等)需要联系人工报价</a></li>
+                                    <li><a class="qqLink" id="qqLink_01" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2182013969&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:2182013969:51" alt="乐彩印刷竭诚为您服务" title="乐彩印刷竭诚为您服务"/></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                             <td width="20%">规格</td>
+                             <td>
+                                 <ul>
+                                     <li><a href="javascript:void(0);" class="selected" name="chicun" val="A4及以下" onclick="SItemClick(this)">A4 (210x285mm)及以下</a></li>
+                                     <li><a href="javascript:void(0);" name="chicun" val="A4以上需要联系人工报价" onclick="SItemClick(this)">A4以上需要联系人工报价</a></li>
+                                     <li><a class="qqLink" id="qqLink_02" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2182013969&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:2182013969:51" alt="乐彩印刷竭诚为您服务" title="乐彩印刷竭诚为您服务"/></a></li>
+                                 </ul>
+                             </td>
+                        </tr>
+                        <tr>
+                             <td>克数</td>
+                             <td>
+                                 <ul>
+                                     <li><a href="#" class="selected" name="keshu" val="157" onclick="SItemClick(this)">整本157克</a></li>
+                                     <li><a href="#" name="keshu" val="200" onclick="SItemClick(this)">封面200克内157克</a></li>
+                                 </ul>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td>P数</td>
+                            <td>
+                                <select name="pishu" onchange="SItemChange(this)">
+                                    <option value="8" selected>8P</option>
+                                    <option value="12">12P</option>
+                                    <option value="16">16P</option>
+                                    <option value="20">20P</option>
+                                    <option value="24">24P</option>
+                                    <option value="28">28P</option>
+                                    <option value="32">32P</option>
+                                    <option value="36">36P</option>
+                                    <option value="40">40P</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>画册数量</td>
+                            <td>
+                                <ul>
+                                    <li><a href="#" class="selected" name="count" val="500" onclick="SItemClick(this)">500本</a></li>
+                                    <li><a href="#" name="count" val="1000" onclick="SItemClick(this)">1000本</a></li>
+                                    <li><a href="#" name="count" val="2000" onclick="SItemClick(this)">2000本</a></li>
+                                    <li><a href="#" name="count" val="3000" onclick="SItemClick(this)">3000本</a></li>
+                                    <li><a href="#" name="count" val="5000" onclick="SItemClick(this)">5000本</a></li>
+                                    <li><a href="#" name="count" val="10000" onclick="SItemClick(this)">10000本</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>普通工艺</td>
+                            <td>
+                                <span>装裱类</span>
+                                <input type="checkbox" value="1" name="zhuangbiao" onclick="displayZhuangBiao(this)">
+                                <select id="zhuangbiao" name="zhuangbiao" style="display: none" onchange="SItemChange(this)">
+                                    <option value="骑马钉" selected>骑马钉</option>
+                                    <option value="无线胶装">无线胶装</option>
+                                    <option value="锁线胶装">锁线胶装</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                            <td>过膜类</td>
+                            <td>
+                                <input type="checkbox" id="fgm" name="fuguangmo" onclick="displayFuMo(this)">
+                                <span>覆光膜</span>
+                                <input type="checkbox" id="fym" name="fuyamo" onclick="displayFuMo(this)">
+                                <span>覆哑膜</span>
+                                <select id="fuguangmo" name="fumo" style="display: none" onchange="SItemChange(this)">
+                                    <option value="封面封底单面覆光膜" selected>封面封底单面覆光膜</option>
+                                    <option value="封面封底双面覆光膜">封面封底双面覆光膜</option>
+                                </select>
+                                <select id="fuyamo" name="fumo" style="display: none" onchange="SItemChange(this)">
+                                    <option value="封面封底单面覆哑膜" selected>封面封底单面覆哑膜</option>
+                                    <option value="封面封底双面覆哑膜">封面封底双面覆哑膜</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>特殊工艺</td>
+                            <td>
+                                <input type="checkbox" id="tsgy" name="tsgy" onclick="selectTsgy(this)">
+                                <span>烫金、烫银、压点线、凹凸、压痕 等工艺，需要联系人工报价</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="calc">
+                <button type="button" class="calcBtn" onclick="calc()">计算报价</button>
+            </div>
+            <div class="itemResult"></div>
+            <div class="itemTip">
+                <div class="tipTab">
+                    <ul>
+                        <li class="DetailsTCur"><a href="javascript:void(0);">制作须知</a></li>
+                        <li><a href="javascript:void(0);">配送方式</a></li>
+                        <li><a href="javascript:void(0);">售后保障</a></li>
+                    </ul>
+                </div>
+                <div class="tipContent">
+                    <div class="tipOne" style="background-color: red;display: block;">1</div>
+                    <div class="tipOne" style="background-color: blue;display: none;">2</div>
+                    <div class="tipOne" style="background-color: yellow;display: none;">3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/calc_02.js"></script>
+</body>
+</html>

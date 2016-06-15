@@ -1,0 +1,163 @@
+.mainContent{
+    width: 1000px;
+    border: #cccccc solid 1px;
+    margin: 50px 50px;
+}
+
+.item{
+    margin: 5px 10px;
+}
+
+/*itemTitle*/
+.itemTitle{
+    color: #FFFFFF;
+    background-color: #ff7077;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
+    height: 35px;
+    line-height: 35px;
+    text-align: left;
+}
+
+/*itemTable*/
+.itemTable{
+    margin-top: 10px;
+}
+.itemTable{
+    border: #cccccc solid 1px;
+}
+.itemTable tr{
+    height: 35px;
+    display: table-row;
+}
+.itemTable tr td:first-child{
+    width: 20%;
+    text-align: right;
+    padding-right: 30px;
+}
+.itemTable li{
+    float: left;
+    margin-right: 10px;
+}
+.itemTable a{
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    border: #cccccc solid 2px;
+    color: #000000;
+    padding: 0 5px;
+}
+.itemTable a:hover{
+    border: #ff7077 solid 2px;
+}
+.itemTable .selected{
+    background: url("../images/icon/selected.png") right bottom no-repeat;
+    border: #ff7077 solid 2px;
+}
+.itemTable select{
+    border: #ff7077 solid 2px;
+}
+.itemTable .qqLink{
+    border: none;
+    display: none;
+}
+.itemTable .qqLink:hover{
+    border: none;
+    display: none;
+}
+/*calc*/
+.calc{
+    height: 65px;
+}
+.calcBtn{
+    float: right;
+    margin: 20px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(255, 134, 134, 0.5);
+    color: #FFFFFF;
+    border: rgba(255, 134, 134, 0.5) solid 1px;
+    box-shadow: 2px 2px 5px #ff7077;
+    -moz-box-shadow: 2px 2px 5px #ff7077;
+    -o-box-shadow: 2px 2px 5px #ff7077;
+    -webkit-box-shadow: 2px 2px 5px #ff7077;
+}
+.calcBtn:hover{
+    background-color: #ff7077;
+    border: #ff7077 solid 1px;
+}
+
+/*itemResult*/
+.itemResult{
+    margin-top: 10px;
+}
+.resultTitle{
+    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
+    font-size: 14px;
+    font-weight: bold;
+    height: 35px;
+    line-height: 35px;
+}
+.resultTable{
+    margin: 10px 10px;
+}
+.resultTable table{
+    border: #cccccc solid 1px;
+    width: 800px;
+}
+.resultTable tr{
+    height: 50px;
+    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
+    font-size: 20px;
+}
+.resultTable td{
+    border: #cccccc solid 1px;
+    text-align: center;
+}
+.resultTable td:first-child {
+    text-align: center;
+}
+
+/*itemTip*/
+.itemTip{
+    border: #cccccc solid 1px;
+
+}
+
+.itemTip .tipTab{
+    border: #cccccc solid 1px;
+    height: 35px;
+}
+
+.tipTab a{
+    display: inline-block;
+    height: 35px;
+    width: 100px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 14px;
+    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
+    color: #000000;
+}
+
+.tipTab li{
+    float: left;
+    border: #cccccc solid 1px;
+    margin: 0 10px;
+}
+
+.DetailTCur{
+    border-top: #ff7077 solid 1px;
+}
+
+.tipContent{
+    margin: 5px 5px;
+}
+.tipOne{
+    width: 100%;
+    height: 200px;
+    font-size: 30px;
+    line-height: 200px;
+    text-align: center;
+}

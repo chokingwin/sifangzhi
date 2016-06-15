@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>【报价】不干胶</title>
+    <link type="text/css" rel="stylesheet" href="styles/reset.css">
+    <link type="text/css" rel="stylesheet" href="styles/calc_03.css">
+</head>
+<body>
+    <div class="mainContent">
+        <div class="item">
+            <div class="itemTitle">不干胶</div>
+            <div class="itemImg"></div>
+            <div class="itemTable">
+                <table>
+                    <tbody id="tb">
+                        <tr>
+                            <td width="20%">材质</td>
+                            <td>
+                                <ul>
+                                    <li><a href="javascript:void(0);" class="selected" onclick="SItemClick(this)" val="铜版纸彩色不干胶（不过膜）" name="caizhi">铜版纸彩色不干胶（不过膜）</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemClick(this)" val="铜版纸彩色特光不干胶（过光膜）" name="caizhi">铜版纸彩色特光不干胶（过光膜）</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>成品尺寸</td>
+                            <td>
+                                <select name="chicun" onchange="SItemChange(this)">
+                                    <option value="90x54mm" selected>90x54mm</option>
+                                    <option value="90x140mm">90x140mm</option>
+                                    <option value="140x210mm">140x210mm</option>
+                                    <option value="210x285mm">210x285mm</option>
+                                    <option value="420x285mm">420x285mm</option>
+                                    <option value="420x570mm">420x570mm</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>印刷数量</td>
+                            <td>
+                                <ul>
+                                    <li><a href="#" name="count" val="500" onclick="SItemClick(this)">500个</a></li>
+                                    <li><a href="#" class="selected" name="count" val="1000" onclick="SItemClick(this)">1000个</a></li>
+                                    <li><a href="#" name="count" val="2000" onclick="SItemClick(this)">2000个</a></li>
+                                    <li><a href="#" name="count" val="3000" onclick="SItemClick(this)">3000个</a></li>
+                                    <li><a href="#" name="count" val="5000" onclick="SItemClick(this)">5000个</a></li>
+                                    <li><a href="#" name="count" val="10000" onclick="SItemClick(this)">10000个</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>特殊工艺</td>
+                            <td>
+                                <input type="checkbox" id="tsgy" name="tsgy" onclick="selectTsgy(this)">
+                                <span>特殊形状需要联系人工报价</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="calc">
+                <button type="button" class="calcBtn" onclick="calc()">计算报价</button>
+            </div>
+            <div class="itemResult"></div>
+            <div class="itemTip">
+                <div class="tipTab">
+                    <ul>
+                        <li class="DetailsTCur"><a href="javascript:void(0);">制作须知</a></li>
+                        <li><a href="javascript:void(0);">配送方式</a></li>
+                        <li><a href="javascript:void(0);">售后保障</a></li>
+                    </ul>
+                </div>
+                <div class="tipContent">
+                    <div class="tipOne" style="background-color: red;display: block;">1</div>
+                    <div class="tipOne" style="background-color: blue;display: none;">2</div>
+                    <div class="tipOne" style="background-color: yellow;display: none;">3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/calc_03.js"></script>
+</body>
+</html>
