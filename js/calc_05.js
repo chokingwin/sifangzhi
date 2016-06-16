@@ -2,57 +2,146 @@
  * Created by chokingwin on 2016-06-15.
  */
 
-//喷绘
-//横幅的报价json数据组
-var BaojiaJson_PH_HF = {
-    'guige':'70',
-    'mishu':0
+//名片类--名片
+//300克经典铜版纸 的报价json数据组
+var BaojiaJson_MP_300TBZ = {
+    'caizhi':'彩色不过胶',
+    'count':2
 };
-//普通背胶海报的报价json数据组
-var BaojiaJson_PH_HB = {
-    'guige':'A2',
-    'count':0
+
+//特种纸 的报价json数据组
+var BaojiaJson_MP_TZZ = {
+    'caizhi':'布纹纸',
+    'count':2
 };
-//520灯布的报价json数据组
-var BaojiaJson_PH_DB = {
-    'chicun':{
-        'width':0,
-        'height':0
-    }
+
+//0.32mm厚度普通pvc 的报价json数据组
+var BaojiaJson_MP_PTPVC = {
+    'caizhi':'透明(单)',
+    'count':2
 };
-//KT板的报价json数据组
-var BaojiaJson_PH_KT = {
-    'chicun':{
-        'width':0,
-        'height':0
-    }
+
+//0.38mm厚度高档pvc 的报价json数据组
+var BaojiaJson_MP_GDPVC = {
+    'caizhi':'透明细磨砂',
+    'count':2
 };
 
 var allPrice = {
-    'type':'横幅',
+    'type':'300克经典铜版纸',
     'allBaoJia':0
 };
 
-/*定义四类喷绘的价格表*/
+/*定义四类（300克经典铜版纸，特种纸，0.32mm厚度普通pvc,0.38mm厚度高档pvc）名片的价格表*/
 
-//横幅
-var priceTable_HF = new Array;
-priceTable_HF['70'] = 5;
-priceTable_HF['80'] = 5.5;
-priceTable_HF['90'] = 6.5;
-priceTable_HF['100'] = 7.5;
+//300克经典铜版纸
+var priceTable_300TBZ = new Array;
 
-//海报
-var priceTable_HB = new Array;
-priceTable_HB['A2'] = 4.5;
-priceTable_HB['A1'] = 8;
-priceTable_HB['A0'] = 15;
+priceTable_300TBZ['彩色不过胶'] = new Array;
+priceTable_300TBZ['彩色过哑胶'] = new Array;
+priceTable_300TBZ['彩色过光胶'] = new Array;
 
-//灯布
-var priceTable_DB = 9;
+priceTable_300TBZ['彩色不过胶']['1'] = 12;
+priceTable_300TBZ['彩色不过胶']['2'] = 8;
+priceTable_300TBZ['彩色不过胶']['5'] = 5;
+priceTable_300TBZ['彩色不过胶']['10'] = 5;
+priceTable_300TBZ['彩色不过胶']['20'] = 3.5;
+priceTable_300TBZ['彩色不过胶']['100'] = 2.5;
 
-//KT板
-var priceTable_KT = 30;
+priceTable_300TBZ['彩色过哑胶']['1'] = 12;
+priceTable_300TBZ['彩色过哑胶']['2'] = 8;
+priceTable_300TBZ['彩色过哑胶']['5'] = 5;
+priceTable_300TBZ['彩色过哑胶']['10'] = 5;
+priceTable_300TBZ['彩色过哑胶']['20'] = 3.5;
+priceTable_300TBZ['彩色过哑胶']['100'] = 2.7;
+
+priceTable_300TBZ['彩色过光胶']['5'] = 7;
+priceTable_300TBZ['彩色过光胶']['10'] = 6;
+priceTable_300TBZ['彩色过光胶']['20'] = 5;
+priceTable_300TBZ['彩色过光胶']['100'] = 3.5;
+
+//特种纸
+var priceTable_TZZ = new Array;
+priceTable_TZZ['布纹纸'] = new Array;
+priceTable_TZZ['荷兰纸'] = new Array;
+priceTable_TZZ['蛋壳白'] = new Array;
+priceTable_TZZ['安格纸'] = new Array;
+priceTable_TZZ['冰白纸'] = new Array;
+priceTable_TZZ['刚古纸'] = new Array;
+priceTable_TZZ['合成纸'] = new Array;
+
+priceTable_TZZ['布纹纸']['2'] = 17;
+priceTable_TZZ['布纹纸']['5'] = 14;
+priceTable_TZZ['布纹纸']['10'] = 12;
+
+priceTable_TZZ['荷兰纸']['2'] = 17;
+priceTable_TZZ['荷兰纸']['5'] = 14;
+priceTable_TZZ['荷兰纸']['10'] = 12;
+
+priceTable_TZZ['蛋壳白']['2'] = 17;
+priceTable_TZZ['蛋壳白']['5'] = 14;
+priceTable_TZZ['蛋壳白']['10'] = 12;
+
+priceTable_TZZ['安格纸']['2'] = 17;
+priceTable_TZZ['安格纸']['5'] = 14;
+priceTable_TZZ['安格纸']['10'] = 12;
+
+priceTable_TZZ['冰白纸']['2'] = 18;
+priceTable_TZZ['冰白纸']['5'] = 16;
+priceTable_TZZ['冰白纸']['10'] = 13;
+
+priceTable_TZZ['刚古纸']['2'] = 17;
+priceTable_TZZ['刚古纸']['5'] = 15;
+priceTable_TZZ['刚古纸']['10'] = 13;
+
+priceTable_TZZ['合成纸']['2'] = 20;
+priceTable_TZZ['合成纸']['5'] = 16;
+priceTable_TZZ['合成纸']['10'] = 13;
+
+//0.32mm厚度普通pvc
+var priceTable_PTPVC = new Array;
+
+priceTable_PTPVC['透明(单)'] = new Array;
+priceTable_PTPVC['哑光白(单)'] = new Array;
+priceTable_PTPVC['哑光白(双)'] = new Array;
+
+priceTable_PTPVC['透明(单)']['2'] = 15;
+priceTable_PTPVC['透明(单)']['5'] = 9;
+
+priceTable_PTPVC['哑光白(单)']['2'] = 17.5;
+priceTable_PTPVC['哑光白(单)']['5'] = 10;
+
+priceTable_PTPVC['哑光白(双)']['2'] = 17.5;
+priceTable_PTPVC['哑光白(双)']['5'] = 10;
+
+//0.38mm厚度高档pvc
+var priceTable_GDPVC = new Array;
+
+priceTable_GDPVC['透明细磨砂'] = new Array;
+priceTable_GDPVC['透明粗磨砂'] = new Array;
+priceTable_GDPVC['透明白墨单面'] = new Array;
+priceTable_GDPVC['透明白墨双面'] = new Array;
+priceTable_GDPVC['普通哑面'] = new Array;
+priceTable_GDPVC['哑面磨砂'] = new Array;
+priceTable_GDPVC['闪银名片哑面'] = new Array;
+priceTable_GDPVC['闪银名片光面'] = new Array;
+priceTable_GDPVC['超高级名片铂金拉丝'] = new Array;
+priceTable_GDPVC['超高级名片流光溢彩'] = new Array;
+
+priceTable_GDPVC['透明细磨砂']['2'] = 45;
+priceTable_GDPVC['透明细磨砂']['5'] = 55;
+
+priceTable_GDPVC['透明粗磨砂']['2'] = 70;
+priceTable_GDPVC['透明粗磨砂']['4'] = 80;
+
+priceTable_GDPVC['透明白墨单面']['5'] = 90;
+priceTable_GDPVC['透明白墨双面']['5'] = 100;
+priceTable_GDPVC['普通哑面']['5'] = 70;
+priceTable_GDPVC['哑面磨砂']['5'] = 95;
+priceTable_GDPVC['闪银名片哑面']['5'] = 75;
+priceTable_GDPVC['闪银名片光面']['5'] = 85;
+priceTable_GDPVC['超高级名片铂金拉丝']['5'] = 160;
+priceTable_GDPVC['超高级名片流光溢彩']['5'] = 160;
 
 /*切换 itemOne*/
 function SItemClick(obj) {
@@ -69,16 +158,16 @@ function SItemClick(obj) {
     var value = obj.attributes['val'].value;
 
     switch (value){
-        case '横幅':
+        case '300克经典铜版纸':
             $('.itemOne').hide().eq(0).show();
             break;
-        case '普通背胶海报':
+        case '特种纸':
             $('.itemOne').hide().eq(1).show();
             break;
-        case '520灯布喷绘':
+        case '0.32mm厚度普通pvc':
             $('.itemOne').hide().eq(2).show();
             break;
-        case 'KT板':
+        case '0.38mm厚度高档pvc':
             $('.itemOne').hide().eq(3).show();
             break;
     }
@@ -105,81 +194,110 @@ function SItemOneClick(obj){
     var value = obj.attributes['val'].value;
 
     switch (type){
-        case '横幅':
-            BaojiaJson_PH_HF.guige = value;
+        case '300克经典铜版纸':
+            BaojiaJson_MP_300TBZ.caizhi = value;
+            if(value == '彩色过光胶'){
+                $('li').eq(7).hide();
+                $('li').eq(8).hide();
+                BaojiaJson_MP_300TBZ.count = 5;
+                $('li').eq(9).children('a').addClass('selected');
+
+            }else{
+                $('li').show();
+            }
             break;
-        case '普通背胶海报':
-            BaojiaJson_PH_HB.guige = value;
+        case '特种纸':
+            BaojiaJson_MP_TZZ.caizhi = value;
+            break;
+        case '0.32mm厚度普通pvc':
+            BaojiaJson_MP_PTPVC.caizhi = value;
+            break;
+        case '0.38mm厚度高档pvc':
+            BaojiaJson_MP_GDPVC.caizhi = value;
+            $('li').eq(38).hide();
+            $('li').eq(39).hide();
+            $('li').eq(40).hide();
+            if(value == '透明细磨砂'){
+                $('li').eq(38).show();
+                $('li').eq(40).show();
+            }else if(value == '透明粗磨砂') {
+                $('li').eq(38).show();
+                $('li').eq(39).show();
+            }else{
+                $('li').eq(40).show();
+                BaojiaJson_MP_GDPVC.count = 5;
+                $('li').eq(40).children('a').addClass('selected');
+            }
             break;
     }
 
+
     //动态刷新计价表
     if($('.itemResult').html() != '')
         calc();
 }
 
-function inputChange(obj){
-    var belong = obj.attributes['belong'].value;
-
-    if(belong == '横幅'){
-        BaojiaJson_PH_HF.mishu = obj.value;
-    }else{
-        BaojiaJson_PH_HB.count = obj.value;
+function SCountChange(obj){
+    var parobj = obj.parentNode.parentNode; //ul
+    var pars = parobj.children;            //li
+    console.log(pars.length);
+    for (var i = 0; i < pars.length; i++) {
+        pars[i].firstChild.className = "";
     }
+    obj.className = "selected";
+    obj.blur();
 
-    //动态刷新计价表
-    if($('.itemResult').html() != '')
-        calc();
-}
+    //获取 value
 
-function inputChange2(obj){
-    var belong = obj.attributes['belong'].value;
-    var name = obj.attributes['name'].value;
-
-    if(belong == '520灯布喷绘'){
-        BaojiaJson_PH_DB['chicun'][name] = obj.value;
-
-    }else{
-        BaojiaJson_PH_KT['chicun'][name] = obj.value;
-    }
-
-    //动态刷新计价表
-    if($('.itemResult').html() != '')
-        calc();
-}
-
-function calc(){
-    console.log(BaojiaJson_PH_HF);
-    console.log(BaojiaJson_PH_HB);
-    console.log(BaojiaJson_PH_DB);
-    console.log(BaojiaJson_PH_KT);
+    var value = obj.attributes['val'].value;
 
     switch (allPrice.type){
-        case '横幅':
-            allPrice.allBaoJia = priceTable_HF[BaojiaJson_PH_HF.guige]* parseFloat(BaojiaJson_PH_HF.mishu);
+        case '300克经典铜版纸':
+            BaojiaJson_MP_300TBZ.count = value;
             break;
-        case '普通背胶海报':
-            allPrice.allBaoJia = priceTable_HB[BaojiaJson_PH_HB.guige]* parseInt(BaojiaJson_PH_HB.count);
+        case '特种纸':
+            BaojiaJson_MP_TZZ.count = value;
             break;
-        case '520灯布喷绘':
-            allPrice.allBaoJia = priceTable_DB * BaojiaJson_PH_DB.chicun.width * BaojiaJson_PH_DB.chicun.height;
+        case '0.32mm厚度普通pvc':
+            BaojiaJson_MP_PTPVC.count = value;
             break;
-        case 'KT板':
-            allPrice.allBaoJia = priceTable_KT * BaojiaJson_PH_KT.chicun.width * BaojiaJson_PH_KT.chicun.height;
+        case '0.38mm厚度高档pvc':
+            BaojiaJson_MP_GDPVC.count = value;
+            break;
+    }
+
+    //动态刷新计价表
+    if($('.itemResult').html() != '')
+        calc();
+}
+
+
+function calc(){
+    console.log(BaojiaJson_MP_300TBZ);
+    console.log(BaojiaJson_MP_TZZ);
+    console.log(BaojiaJson_MP_PTPVC);
+    console.log(BaojiaJson_MP_GDPVC);
+
+    switch (allPrice.type){
+        case '300克经典铜版纸':
+            allPrice.allBaoJia = priceTable_300TBZ[BaojiaJson_MP_300TBZ.caizhi][BaojiaJson_MP_300TBZ.count] * parseInt(BaojiaJson_MP_300TBZ.count);
+            break;
+        case '特种纸':
+            allPrice.allBaoJia = priceTable_TZZ[BaojiaJson_MP_TZZ.caizhi][BaojiaJson_MP_TZZ.count] * parseInt(BaojiaJson_MP_TZZ.count);
+            break;
+        case '0.32mm厚度普通pvc':
+            allPrice.allBaoJia = priceTable_PTPVC[BaojiaJson_MP_PTPVC.caizhi][BaojiaJson_MP_PTPVC.count] * parseInt(BaojiaJson_MP_PTPVC.count);
+            break;
+        case '0.38mm厚度高档pvc':
+            allPrice.allBaoJia = priceTable_GDPVC[BaojiaJson_MP_GDPVC.caizhi][BaojiaJson_MP_GDPVC.count] * parseInt(BaojiaJson_MP_GDPVC.count);
             break;
     }
     console.log(allPrice);
 
-    //showPriceTable();
+    showPriceTable();
 }
 
 function showPriceTable(){
-    var fumo = new Array;
-    fumo[''] = 0;
-    fumo['单面覆光膜'] = 1;
-    fumo['双面覆光膜'] = 2;
-    fumo['单面覆哑膜'] = 1;
-    fumo['双面覆哑膜'] = 2;
 
     $('.itemResult').html('');
 
@@ -188,43 +306,94 @@ function showPriceTable(){
         '<table>'+
         '<tbody>'+
         '<tr>'+
-        '<td> </td>'+
-        '<td>基础部分</td>'+
-        '<td>普通工艺</td>'+
-        '<td>特殊工艺</td>'+
+        '<td>种类</td>'+
+        '<td>'+ allPrice.type +'</td>'+
         '</tr>'+
         '<tr>'+
-        '<td>条目</td>'+
-        '<td>'+BaojiaJson_XCD.banshi+BaojiaJson_XCD.keshu+'克'+BaojiaJson_XCD.caizhi+BaojiaJson_XCD.chicun+' '+BaojiaJson_XCD.count+'张</td>'+
-        '<td>'+BaojiaJson_XCD.zheye+' '+ BaojiaJson_XCD.fumo +'</td>'+
-        '<td>'+BaojiaJson_XCD.tsgy+'</td>'+
-        '</tr>'+
-        '<tr>'+
-        '<td>价格</td>'+
-        '<td>'+allPrice.jichuBaoJia+'</td>'+
-        '<td>'+allPrice.ptgyBaoJia.zheye+' '+allPrice.ptgyBaoJia.fumo+'</td>'+
-        '<td>'+allPrice.tsgyBaoJia+'</td>'+
-        '</tr>'+
-        '<tr>'+
-        '<td>计算公式</td>';
-    if(allPrice.ptgyBaoJia.zheye != '' && allPrice.ptgyBaoJia.fumo != ''){
-        html += '<td colspan="3">'+allPrice.jichuBaoJia+' + '+allPrice.ptgyBaoJia.zheye+' + '+ '0.12 * '+BaojiaJson_XCD.count+' * '+fumo[BaojiaJson_XCD.fumo]+' = '+allPrice.allBaoJia+'</td>';
-    }else if(allPrice.ptgyBaoJia.zheye != ''){
-        html += '<td colspan="3">'+allPrice.jichuBaoJia+' + '+allPrice.ptgyBaoJia.zheye+' = '+allPrice.allBaoJia+'</td>';
-    }else if(allPrice.ptgyBaoJia.fumo != ''){
-        html += '<td colspan="3">'+allPrice.jichuBaoJia+' + '+ '0.12 * '+BaojiaJson_XCD.count+' * '+fumo[BaojiaJson_XCD.fumo]+' = '+allPrice.allBaoJia+'</td>';
-    }else {
-        html += '<td colspan="3">'+allPrice.jichuBaoJia+'</td>';
+        '<td>材质</td>';
+    switch (allPrice.type){
+        case '300克经典铜版纸':
+            html +=
+                '<td>'+BaojiaJson_MP_300TBZ.caizhi+'</td>'+
+                '</tr>'+
+                '<tr>'+
+                '<td>数量</td>'+
+                '<td>'+BaojiaJson_MP_300TBZ.count+'</td>'+
+                '</tr>'+
+                '<tr>'+
+                '<td>计算公式</td>'+
+                '<td>'+BaojiaJson_MP_300TBZ.count+' * '+priceTable_300TBZ[BaojiaJson_MP_300TBZ.caizhi][BaojiaJson_MP_300TBZ.count]+'</td>'+
+                '</tr>'+
+                '<tr>'+
+                '<td>总价</td>'+
+                '<td>'+ allPrice.allBaoJia +'</td>'+
+                '</tr>'+
+                '</tbody>'+
+                '</table>'+
+                '</div>';
+            break;
+        case '特种纸':
+            html +=
+                '<td>'+BaojiaJson_MP_TZZ.caizhi+'</td>'+
+                '</tr>'+
+                '<tr>'+
+                '<td>数量</td>'+
+                '<td>'+BaojiaJson_MP_TZZ.count+'</td>'+
+                '</tr>'+
+                '<tr>'+
+                '<td>计算公式</td>'+
+                '<td>'+BaojiaJson_MP_TZZ.count+' * '+priceTable_TZZ[BaojiaJson_MP_TZZ.caizhi][BaojiaJson_MP_TZZ.count]+'</td>'+
+                '</tr>'+
+                '<tr>'+
+                '<td>总价</td>'+
+                '<td>'+ allPrice.allBaoJia +'</td>'+
+                '</tr>'+
+                '</tbody>'+
+                '</table>'+
+                '</div>';
+            break;
+        case '0.32mm厚度普通pvc':
+            html +=
+                '<td>'+BaojiaJson_MP_PTPVC.caizhi+'</td>'+
+                '</tr>'+
+                '<tr>'+
+                '<td>数量</td>'+
+                '<td>'+BaojiaJson_MP_PTPVC.count+'</td>'+
+                '</tr>'+
+                '<tr>'+
+                '<td>计算公式</td>'+
+                '<td>'+BaojiaJson_MP_PTPVC.count+' * '+priceTable_PTPVC[BaojiaJson_MP_PTPVC.caizhi][BaojiaJson_MP_PTPVC.count]+'</td>'+
+                '</tr>'+
+                '<tr>'+
+                '<td>总价</td>'+
+                '<td>'+ allPrice.allBaoJia +'</td>'+
+                '</tr>'+
+                '</tbody>'+
+                '</table>'+
+                '</div>';
+            break;
+        case '0.38mm厚度高档pvc':
+            html +=
+                '<td>'+BaojiaJson_MP_GDPVC.caizhi+'</td>'+
+                '</tr>'+
+                '<tr>'+
+                '<td>数量</td>'+
+                '<td>'+BaojiaJson_MP_GDPVC.count+'</td>'+
+                '</tr>'+
+                '<tr>'+
+                '<td>计算公式</td>'+
+                '<td>'+BaojiaJson_MP_GDPVC.count+' * '+priceTable_GDPVC[BaojiaJson_MP_GDPVC.caizhi][BaojiaJson_MP_GDPVC.count]+'</td>'+
+                '</tr>'+
+                '<tr>'+
+                '<td>总价</td>'+
+                '<td>'+ allPrice.allBaoJia +'</td>'+
+                '</tr>'+
+                '</tbody>'+
+                '</table>'+
+                '</div>';
+            break;
     }
 
-    html += '</tr>'+
-        '<tr>'+
-        '<td colspan="4"><h3 style="float: right">'+allPrice.allBaoJia+'</h3><p style="float: right;margin-right: 10px;">总价格:</p></td>'+
-        '</tr>'+
-        '</tbody>'+
-        '</table>'+
-        '</div>'
-    ;
 
     $('.itemResult').append(html);
 }
