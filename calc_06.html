@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>【报价】PVC卡片</title>
+    <link type="text/css" rel="stylesheet" href="styles/reset.css">
+    <link type="text/css" rel="stylesheet" href="styles/calc_06.css">
+</head>
+<body>
+    <div class="mainContent">
+        <div class="item">
+            <div class="itemTitle">PVC卡片</div>
+            <div class="itemImg"></div>
+            <div class="itemTable">
+                <table>
+                    <tbody id="tb">
+                        <tr>
+                            <td width="20%">种类</td>
+                            <td>
+                                <ul>
+                                    <li><a href="javascript:void(0);" class="selected" onclick="SItemClick(this)" val="普通会员卡/优惠卡" name="type">普通会员卡/优惠卡</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemClick(this)" val="工作证/人像卡/工牌 需要联系人工报价" name="type">工作证/人像卡/工牌 需要联系人工报价</a></li>
+                                    <li><a class="qqLink" id="qqLink_01" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2182013969&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:2182013969:51" alt="乐彩印刷竭诚为您服务" title="乐彩印刷竭诚为您服务"/></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>印刷数量</td>
+                            <td>
+                                <ul>
+                                    <li><a href="javascript:void(0);" class="selected" name="count" val="500" onclick="SCountChange(this)">500张</a></li>
+                                    <li><a href="javascript:void(0);" name="count" val="3000" onclick="SCountChange(this)">1000张~3000张</a></li>
+                                    <li><a href="javascript:void(0);" name="count" val="5000" onclick="SCountChange(this)">3000张~5000张</a></li>
+                                    <li><a href="javascript:void(0);" name="count" val="10000" onclick="SCountChange(this)">5000张~10000张</a></li>
+                                    <span class="detailNumSpan" style="display: none;">具体数量：</span><input class="detailNum" type='text'  onchange="inputChange(this)">
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>特殊工艺</td>
+                            <td>
+                                <input type="checkbox" id="tsgy" name="tsgy" onclick="selectTsgy(this)">
+                                <span>磁条、烫金等，需联系人工报价</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="calc">
+                <button type="button" class="calcBtn" onclick="calc()">计算报价</button>
+            </div>
+            <div class="itemResult"></div>
+            <div class="itemTip">
+                <div class="tipTab">
+                    <ul>
+                        <li class="DetailsTCur"><a href="javascript:void(0);">制作须知</a></li>
+                        <li><a href="javascript:void(0);">配送方式</a></li>
+                        <li><a href="javascript:void(0);">售后保障</a></li>
+                    </ul>
+                </div>
+                <div class="tipContent">
+                    <div class="tipOne" style="background-color: red;display: block;">1</div>
+                    <div class="tipOne" style="background-color: blue;display: none;">2</div>
+                    <div class="tipOne" style="background-color: yellow;display: none;">3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/calc_06.js"></script>
+</body>
+</html>
