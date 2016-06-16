@@ -21,36 +21,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="calc_06.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/calc_06.html">
+      <file leaf-file-name="calc_07.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/calc_07.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.51282">
-              <caret line="34" column="136" selection-start-line="34" selection-start-column="136" selection-end-line="34" selection-end-column="136" />
+            <state vertical-scroll-proportion="-8.461538">
+              <caret line="20" column="133" selection-start-line="20" selection-start-column="111" selection-end-line="20" selection-end-column="133" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="calc_07.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/calc_07.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.63616073">
+              <caret line="154" column="0" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
               <folding>
-                <element signature="n#style#0;n#span#0;n#ul#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1466077307084" expanded="true" signature="7220:7232" placeholder="..." />
+                <marker date="1466077307084" expanded="true" signature="7271:7303" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="calc_06.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/calc_06.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.59821427">
-              <caret line="174" column="0" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
-              <folding>
-                <marker date="1466067525311" expanded="true" signature="4238:4250" placeholder="..." />
-                <marker date="1466067525311" expanded="true" signature="4289:4321" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="calc_06.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/styles/calc_06.css">
+      <file leaf-file-name="calc_07.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/calc_07.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+              <caret line="73" column="22" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -76,6 +74,9 @@
         <option value="$PROJECT_DIR$/styles/calc_06.css" />
         <option value="$PROJECT_DIR$/calc_06.html" />
         <option value="$PROJECT_DIR$/js/calc_06.js" />
+        <option value="$PROJECT_DIR$/styles/calc_07.css" />
+        <option value="$PROJECT_DIR$/calc_07.html" />
+        <option value="$PROJECT_DIR$/js/calc_07.js" />
       </list>
     </option>
   </component>
@@ -426,13 +427,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/calc_01.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31038508">
-          <caret line="69" column="32" selection-start-line="69" selection-start-column="32" selection-end-line="76" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/jquery.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7235023">
@@ -459,37 +453,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/calc_01.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="153" column="9" selection-start-line="153" selection-start-column="9" selection-end-line="153" selection-end-column="9" />
-          <folding>
-            <marker date="1465874831913" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1465874831913" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/calc_01.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="145" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="162" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/calc_05.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19399539">
           <caret line="235" column="37" selection-start-line="235" selection-start-column="37" selection-end-line="235" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/calc_06.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -506,11 +473,73 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/calc_06.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59821427">
-          <caret line="174" column="0" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.39732143">
+          <caret line="135" column="25" selection-start-line="135" selection-start-column="25" selection-end-line="135" selection-end-column="25" />
           <folding>
-            <marker date="1466067525311" expanded="true" signature="4238:4250" placeholder="..." />
-            <marker date="1466067525311" expanded="true" signature="4289:4321" placeholder="..." />
+            <marker date="1466067525311" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1466067525311" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/calc_01.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22991072">
+          <caret line="145" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="162" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/calc_01.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33482143">
+          <caret line="153" column="9" selection-start-line="153" selection-start-column="9" selection-end-line="153" selection-end-column="9" />
+          <folding>
+            <marker date="1465874831913" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1465874831913" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calc_01.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3150525">
+          <caret line="9" column="29" selection-start-line="0" selection-start-column="0" selection-end-line="146" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/calc_06.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="76" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/calc_07.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="73" column="22" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calc_07.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.461538">
+          <caret line="20" column="133" selection-start-line="20" selection-start-column="111" selection-end-line="20" selection-end-column="133" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/calc_07.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63616073">
+          <caret line="154" column="0" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
+          <folding>
+            <marker date="1466077307084" expanded="true" signature="7220:7232" placeholder="..." />
+            <marker date="1466077307084" expanded="true" signature="7271:7303" placeholder="..." />
           </folding>
         </state>
       </provider>
