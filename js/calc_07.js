@@ -2,12 +2,11 @@
  * Created by chokingwin on 2016-06-16.
  */
 
-
 //高级原浆纸无碳联单 的报价json数据组
 var BaojiaJson_LD = {
     'type':'不带牛皮纸封面、自带复写功能，如送货单、收据',
     'liandan':'两联',
-    'chichun':'正64开',
+    'chicun':'正64开',
     'count':'400',
     'liushuihao':'',
     'yzd':''
@@ -15,8 +14,8 @@ var BaojiaJson_LD = {
 var allPrice = {
     'jichuBaoJia':0,
     'ptgyBaoJia':{
-        'liushuihao':'',
-        'yzd':''
+        'liushuihao':0,
+        'yzd':0
     },
     'allBaoJia':0
 };
@@ -125,13 +124,14 @@ function SItemChange(obj){
 }
 
 function inputChange(obj){
-
+    BaojiaJson_LD.count = obj.value;
 }
 
 function selectPtgy(obj){
     var name = obj.attributes['name'].value;
+    var value = obj.attributes['val'].value;
     if(obj.checked){
-        BaojiaJson_LD[name] = name;
+        BaojiaJson_LD[name] = value;
     }else {
         BaojiaJson_LD[name] = '';
     }
@@ -142,52 +142,42 @@ function selectPtgy(obj){
 }
 
 function calc(){
+    var yzd = new Array;
+
+    yzd['正64开'] = 0.05;
+    yzd['正48开'] = 0.05;
+    yzd['正32开'] = 0.1;
+    yzd['正16开'] = 0.1;
+    yzd['大64开'] = 0.05;
+    yzd['大48开'] = 0.05;
+    yzd['大32开'] = 0.1;
+    yzd['大16开'] = 0.1;
+
+    var liushuihao = new Array;
+    liushuihao['加流水号'] = 0.05;
+    liushuihao[''] = 0;
+
+    var yzd = new Array;
+    yzd['加硬质垫'] = 0.05;
+    yzd[''] = 0;
+
     console.log(BaojiaJson_LD);
 
     switch (BaojiaJson_LD.type){
         case '不带牛皮纸封面、自带复写功能，如送货单、收据':
-            allPrice.jichuBaoJia = priceTable_LD_BDNP[BaojiaJson_LD.liandan][BaojiaJson_LD.chicun] + BaojiaJson_LD.liushuihao*0.05;
+            allPrice.jichuBaoJia = priceTable_LD_BDNP[BaojiaJson_LD.liandan][BaojiaJson_LD.chicun] * BaojiaJson_LD.count;
             break;
         case '带牛皮纸封面、自带复写功能，如送货单、收据':
-            allPrice.jichuBaoJia = priceTable_LD_BDNP[BaojiaJson_LD.liandan][BaojiaJson_LD.chicun];
+            allPrice.jichuBaoJia = priceTable_LD_DNP[BaojiaJson_LD.liandan][BaojiaJson_LD.chicun] * BaojiaJson_LD.count;
             break;
     }
 
-    //清空普通工艺里的 折页 报价
-    allPrice.ptgyBaoJia.zheye = '';
-    //判断普通工艺里的 折页类是否选择
-    if(BaojiaJson_XCD.zheye){
-        if(BaojiaJson_XCD.count <= 3000) {
-            allPrice.ptgyBaoJia.zheye = 80;
-        }
-        else if(BaojiaJson_XCD.count == 5000){
-            allPrice.ptgyBaoJia.zheye = 100;
-        }else{
-            allPrice.ptgyBaoJia.zheye = 120;
-        }
-    }
-    //清空普通工艺里的 覆膜 报价
-    allPrice.ptgyBaoJia.fumo = '';
-    //判断普通工艺里的 覆膜类是否选择
-    if(BaojiaJson_XCD.fumo){
-        switch(BaojiaJson_XCD.fumo){
-            case '单面覆光膜':
-                allPrice.ptgyBaoJia.fumo = parseInt(BaojiaJson_XCD.count) * 0.12;
-                break;
-            case '双面覆光膜':
-                allPrice.ptgyBaoJia.fumo = parseInt(BaojiaJson_XCD.count) * 0.12 * 2;
-                break;
-            case '单面覆哑膜':
-                allPrice.ptgyBaoJia.fumo = parseInt(BaojiaJson_XCD.count) * 0.12;
-                break;
-            case '双面覆哑膜':
-                allPrice.ptgyBaoJia.fumo = parseInt(BaojiaJson_XCD.count) * 0.12 * 2;
-                break;
-        }
-    }
+    //计算普通工艺
+    allPrice.ptgyBaoJia.liushuihao = liushuihao[BaojiaJson_LD.liushuihao] * BaojiaJson_LD.count;
+    allPrice.ptgyBaoJia.yzd = yzd[BaojiaJson_LD.yzd] * BaojiaJson_LD.count;
 
     //计算总报价
-    allPrice.allBaoJia = allPrice.jichuBaoJia + allPrice.ptgyBaoJia.zheye + allPrice.ptgyBaoJia.fumo;
+    allPrice.allBaoJia = allPrice.jichuBaoJia + allPrice.ptgyBaoJia.liushuihao + allPrice.ptgyBaoJia.yzd;
     console.log(allPrice);
     console.log('总价格：'+allPrice.allBaoJia);
 
@@ -211,29 +201,28 @@ function showPriceTable(){
         '<tr>'+
         '<td> </td>'+
         '<td>基础部分</td>'+
-        '<td>普通工艺</td>'+
-        '<td>特殊工艺</td>'+
+        '<td colspan="2">普通工艺</td>'+
         '</tr>'+
         '<tr>'+
         '<td>条目</td>'+
-        '<td>'+BaojiaJson_XCD.banshi+BaojiaJson_XCD.keshu+'克'+BaojiaJson_XCD.caizhi+BaojiaJson_XCD.chicun+' '+BaojiaJson_XCD.count+'张</td>'+
-        '<td>'+BaojiaJson_XCD.zheye+' '+ BaojiaJson_XCD.fumo +'</td>'+
-        '<td>'+BaojiaJson_XCD.tsgy+'</td>'+
+        '<td>'+BaojiaJson_LD.liandan+' '+BaojiaJson_LD.chicun+' '+BaojiaJson_LD.type+'</td>'+
+        '<td>'+BaojiaJson_LD.liushuihao+'</td>'+
+        '<td>'+BaojiaJson_LD.yzd+'</td>'+
         '</tr>'+
         '<tr>'+
         '<td>价格</td>'+
         '<td>'+allPrice.jichuBaoJia+'</td>'+
-        '<td>'+allPrice.ptgyBaoJia.zheye+' '+allPrice.ptgyBaoJia.fumo+'</td>'+
-        '<td>'+allPrice.tsgyBaoJia+'</td>'+
+        '<td>'+allPrice.ptgyBaoJia.liushuihao+'</td>'+
+        '<td>'+allPrice.ptgyBaoJia.yzd+'</td>'+
         '</tr>'+
         '<tr>'+
         '<td>计算公式</td>';
-    if(allPrice.ptgyBaoJia.zheye != '' && allPrice.ptgyBaoJia.fumo != ''){
-        html += '<td colspan="3">'+allPrice.jichuBaoJia+' + '+allPrice.ptgyBaoJia.zheye+' + '+ '0.12 * '+BaojiaJson_XCD.count+' * '+fumo[BaojiaJson_XCD.fumo]+' = '+allPrice.allBaoJia+'</td>';
-    }else if(allPrice.ptgyBaoJia.zheye != ''){
-        html += '<td colspan="3">'+allPrice.jichuBaoJia+' + '+allPrice.ptgyBaoJia.zheye+' = '+allPrice.allBaoJia+'</td>';
-    }else if(allPrice.ptgyBaoJia.fumo != ''){
-        html += '<td colspan="3">'+allPrice.jichuBaoJia+' + '+ '0.12 * '+BaojiaJson_XCD.count+' * '+fumo[BaojiaJson_XCD.fumo]+' = '+allPrice.allBaoJia+'</td>';
+    if(allPrice.ptgyBaoJia.liushuihao != '' && allPrice.ptgyBaoJia.yzd != ''){
+        html += '<td colspan="3">'+allPrice.jichuBaoJia+' + '+allPrice.ptgyBaoJia.liushuihao+' + '+allPrice.ptgyBaoJia.yzd+' = '+allPrice.allBaoJia+'</td>';
+    }else if(allPrice.ptgyBaoJia.liushuihao != ''){
+        html += '<td colspan="3">'+allPrice.jichuBaoJia+' + '+allPrice.ptgyBaoJia.liushuihao+' = '+allPrice.allBaoJia+'</td>';
+    }else if(allPrice.ptgyBaoJia.yzd != ''){
+        html += '<td colspan="3">'+allPrice.jichuBaoJia+' + '+allPrice.ptgyBaoJia.yzd+' = '+allPrice.allBaoJia+'</td>';
     }else {
         html += '<td colspan="3">'+allPrice.jichuBaoJia+'</td>';
     }
