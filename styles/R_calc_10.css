@@ -1,0 +1,232 @@
+.mainContent{
+    width: 800px;
+    min-height: 1781px;
+    margin: 50px 50px;
+    background-color: #F1F1F1;
+}
+
+.item{
+    float: left;
+    margin: 8px 8px;
+    width: 784px;
+}
+
+/*itemTitle*/
+.itemTitle{
+    color: #FFFFFF;
+    background-color: #ff7077;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
+    height: 35px;
+    line-height: 35px;
+    text-align: left;
+}
+
+/*itemImg*/
+.itemImg{
+    height: 150px;
+    background-color: #FFFFFF;
+}
+
+/*itemTable*/
+.itemTable{
+    margin-top: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
+    color: #693906;
+}
+
+.itemTable tr{
+    height: 45px;
+    display: table-row;
+}
+.itemTable tr td:first-child{
+    width: 64px;
+    text-align: center;
+    /*margin-right: 17px;*/
+}
+.itemTable tr td:last-child{
+    padding-left: 17px;
+}
+.itemTable li{
+    float: left;
+    margin-right: 15px;
+}
+.itemTable li a{
+    display: inline-block;
+    min-width: 40px;
+    height: 25px;
+    line-height: 25px;
+    border: #ABAAAB solid 2px;
+    border-radius: 1px;
+    color: #693906;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+.itemTable li a:hover{
+    border: #693906 solid 2px;
+}
+.itemTable .selected{
+    color: #FFFFFF;
+    background-color: #693906;
+    border: #693906 solid 2px;
+}
+.itemTable select{
+    height: 29px;
+    border: #693906 solid 2px;
+    color: #693906;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
+    padding-left: 10px;
+}
+.itemTable .qqLink{
+    border: none;
+    display: none;
+}
+.itemTable .qqLink:hover{
+    border: none;
+    display: none;
+}
+
+.itemTable input{
+    width: 60px;
+    height:25px;
+    border: #693906 solid 2px;
+    padding-left: 5px
+}
+.itemTable span{
+    margin: 0 5px;
+}
+
+
+/*calc*/
+.calc{
+    height: 100px;
+}
+.calcBtn{
+    float: right;
+    margin: 20px 20px;
+    font-size: 20px;
+    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 10px 28px;
+    background-color: #B59C83;
+    border: #B59C83 solid 1px;
+    border-radius: 50px;
+}
+.calcBtn:hover{
+    background-color: #693906;
+    border: #693906 solid 1px;
+    border-radius: 50px;
+}
+
+/*itemResult*/
+.itemResult{
+    margin-top: 10px;
+}
+.resultTitle{
+    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
+    font-size: 12px;
+    font-weight: bold;
+    color: #693906;
+    height: 35px;
+    line-height: 35px;
+    margin-left: 16px;
+}
+.resultTable{
+    margin: 10px 16px;
+}
+.resultTable table{
+    width: 100%;
+    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+/*Å¼ÊýÐÐ*/
+.resultTable table tr:nth-child(even) > td{
+    background-color: #93704D;
+}
+/*ÆæÊýÐÐ*/
+.resultTable table tr:nth-child(odd) > td{
+    background-color: #AE957C;
+}
+.resultTable tr{
+    height: 50px;
+}
+.resultTable td{
+    text-align: center;
+}
+.resultTable td:first-child {
+    text-align: center;
+}
+
+/*itemTip*/
+.itemTip{
+    margin: 24px 16px;
+    position: relative;
+}
+
+.itemTip .tipTab{
+    height: 60px;
+    margin-right: 350px;
+}
+
+.tipTab a{
+    display: inline-block;
+    height: 60px;
+    width: 144px;
+    line-height: 60px;
+    font-size: 16px;
+    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
+    font-weight: bold;
+    text-align: center;
+    color: #6A3906;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1);
+    /*border-top: #6A3906 solid 9px;*/
+}
+
+.tipTab li{
+    float: right;
+    margin-left: -15px;
+}
+
+.DetailsTCur > .tipTab > a{
+    display: inline-block;
+    height: 60px;
+    width: 144px;
+    line-height: 60px;
+    font-size: 16px;
+    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
+    font-weight: bold;
+    text-align: center;
+    color: #6A3906;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1);
+    border-top: #6A3906 solid 9px;
+}
+
+.tipContent{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 752px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+}
+.tipOne{
+    width: 100%;
+    height: 200px;
+    font-size: 30px;
+    line-height: 200px;
+    text-align: center;
+}

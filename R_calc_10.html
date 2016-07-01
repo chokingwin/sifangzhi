@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>【报价】亚克力水晶字</title>
+    <link type="text/css" rel="stylesheet" href="styles/reset.css">
+    <link type="text/css" rel="stylesheet" href="styles/R_calc_10.css">
+</head>
+<body>
+    <div class="mainContent">
+        <div class="item">
+            <!--<div class="itemTitle">亚克力水晶字</div>-->
+            <div class="itemImg"></div>
+            <div class="itemTable">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>厚&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;度</td>
+                        <td>
+                            <ul>
+                                <li><a href="javascript:void(0);" class="selected" onclick="SItemClick(this)" name="houdu" val="5+3">5+3</a></li>
+                                <li><a href="javascript:void(0);" onclick="SItemClick(this)" name="houdu" val="8+3">8+3</a></li>
+                                <li><a href="javascript:void(0);" onclick="SItemClick(this)" name="houdu" val="10+3">10+3</a></li>
+                                <li><a href="javascript:void(0);" onclick="SItemClick(this)" name="houdu" val="12+3">12+3</a></li>
+                                <li><a href="javascript:void(0);" onclick="SItemClick(this)" name="houdu" val="15+3">15+3</a></li>
+                                <li><a href="javascript:void(0);" onclick="SItemClick(this)" name="houdu" val="18+3">18+3</a></li>
+                                <li><a href="javascript:void(0);" onclick="SItemClick(this)" name="houdu" val="20+3">20+3</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>最长边尺寸</td>
+                        <td>
+                            <input type="text" name="chicun" value="5" onchange="inputChange(this)"><span>cm</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>字&nbsp;&nbsp;个&nbsp;&nbsp;数</td>
+                        <td>
+                            <input type="text" name="count" value="4" onchange="inputChange(this)">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="calc">
+                <button type="button" class="calcBtn" onclick="calc()">计算报价</button>
+            </div>
+            <div class="itemResult"></div>
+            <div class="itemTip">
+                <div class="tipTab">
+                    <ul>
+                        <li class="DetailsTCur"><a href="javascript:void(0);">售后保障</a></li>
+                        <li><a href="javascript:void(0);">配送方式</a></li>
+                        <li><a href="javascript:void(0);">制作须知</a></li>
+                    </ul>
+                </div>
+                <div class="tipContent">
+                    <div class="tipOne" style="display: none;">3</div>
+                    <div class="tipOne" style="display: none;">2</div>
+                    <div class="tipOne" style="display: block;">1</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/R_calc_10.js"></script>
+</body>
+</html>

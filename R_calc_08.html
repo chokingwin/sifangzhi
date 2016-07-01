@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>【报价】纪念册</title>
+    <link type="text/css" rel="stylesheet" href="styles/reset.css">
+    <link type="text/css" rel="stylesheet" href="styles/R_calc_08.css">
+</head>
+<body>
+<div class="mainContent">
+    <div class="item">
+        <!--<div class="itemTitle">纪念册</div>-->
+        <div class="itemImg"></div>
+        <div class="itemTable">
+            <table>
+                <tbody>
+                <tr>
+                    <td>材&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;质</td>
+                    <td>
+                        <ul>
+                            <li><a href="javascript:void(0);" class="selected" onclick="SItemClick(this)" val="蝴蝶装白卡" name="caizhi">蝴蝶装白卡</a></li>
+                            <li><a href="javascript:void(0);" onclick="SItemClick(this)" val="其它材质 需要联系人工报价" name="caizhi">其它材质 需要联系人工报价</a></li>
+                            <li><a class="qqLink" id="qqLink_01" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2182013969&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:2182013969:51" alt="乐彩印刷竭诚为您服务" title="乐彩印刷竭诚为您服务"/></a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>规&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格</td>
+                    <td>
+                        <ul>
+                            <li><a href="javascript:void(0);" class="selected" name="guige" val="A4" onclick="SItemClick(this)">A4 (210*285mm)</a></li>
+                            <li><a href="javascript:void(0);" name="guige" val="其他规格需要联系人工报价" onclick="SItemClick(this)">其他规格需要联系人工报价</a></li>
+                            <li><a class="qqLink" id="qqLink_02" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2182013969&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:2182013969:51" alt="乐彩印刷竭诚为您服务" title="乐彩印刷竭诚为您服务"/></a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>P&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数</td>
+                    <td>
+                        <ul>
+                            <li><a href="javascript:void(0);" class="selected" name="pishu" val="20" onclick="SItemClick(this)">20P</a></li>
+                            <li><a href="javascript:void(0);" name="pishu" val="24" onclick="SItemClick(this)">24P</a></li>
+                            <li><a href="javascript:void(0);" name="pishu" val="28" onclick="SItemClick(this)">28P</a></li>
+                            <li><a href="javascript:void(0);" name="pishu" val="32" onclick="SItemClick(this)">32P</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>印刷数量</td>
+                    <td>
+                        <input class="detailNum" type="text" value="1" onchange="inputChange(this)"><span> </span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="calc">
+            <button type="button" class="calcBtn" onclick="calc()">计算报价</button>
+        </div>
+        <div class="itemResult"></div>
+        <div class="itemTip">
+            <div class="tipTab">
+                <ul>
+                    <li class="DetailsTCur"><a href="javascript:void(0);">售后保障</a></li>
+                    <li><a href="javascript:void(0);">配送方式</a></li>
+                    <li><a href="javascript:void(0);">制作须知</a></li>
+                </ul>
+            </div>
+            <div class="tipContent">
+                <div class="tipOne" style="display: none;">3</div>
+                <div class="tipOne" style="display: none;">2</div>
+                <div class="tipOne" style="display: block;">1</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/R_calc_08.js"></script>
+</body>
+</html>
