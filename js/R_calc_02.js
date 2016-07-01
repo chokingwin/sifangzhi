@@ -256,12 +256,14 @@ function SItemChange(obj){
 
 function displayZhuangBiao(obj){
     var name = obj.attributes['name'].value;
-    if(obj.checked){
-        $('#'+name).css('display','inline-block');
-        BaojiaJson_XCD[name] = $('#'+name+' option:selected').text();
-    }else{
+    if(obj.className == "selected") {
+        obj.className = "";
         $('#'+name).css('display','none');
         BaojiaJson_XCD[name] = '';
+    }else {
+        obj.className = "selected";
+        $('#'+name).css('display','inline-block');
+        BaojiaJson_XCD[name] = $('#'+name+' option:selected').text();
     }
 
     //动态刷新计价表
@@ -270,33 +272,34 @@ function displayZhuangBiao(obj){
 }
 
 function displayFuMo(obj){
-    $('#fuguangmo').css('display','none');
-    $('#fuyamo').css('display','none');
-    BaojiaJson_XCD['fumo'] = '';
-
     var name = obj.attributes['name'].value;
-    if(obj.checked && name=='fuguangmo'){
-        $('#fym').attr('checked',false);
-        $('#'+name).css('display','inline-block');
-        BaojiaJson_XCD['fumo'] = $('#'+name+' option:selected').text();
-    }else if(obj.checked && name=='fuyamo'){
-        $('#fgm').attr('checked',false);
-        $('#'+name).css('display','inline-block');
-        BaojiaJson_XCD['fumo'] = $('#'+name+' option:selected').text();
-    }
 
+    if(obj.className == "selected") {
+        obj.className = "";
+        $('#'+name).css('display','none');
+        BaojiaJson_XCD[name] = '';
+    }else {
+        obj.className = "selected";
+        $('#'+name).css('display','inline-block');
+        BaojiaJson_XCD[name] = $('#'+name+' option:selected').text();
+    }
     //动态刷新计价表
     if($('.itemResult').html() != '')
         calc();
 }
 
 function selectTsgy(obj){
-    if(obj.checked){
-        BaojiaJson_XCD['tsgy'] = '烫金、烫银、压点线、凹凸、压痕等工艺';
-        allPrice.tsgyBaoJia = '这部分需要人工额外报价';
-    }else {
+    var name = obj.attributes['name'].value;
+    if(obj.className == 'selected'){
+        obj.className = "";
+        obj.style.backgroundColor = '#FFFFFF';
         BaojiaJson_XCD['tsgy'] = '';
         allPrice.tsgyBaoJia = '';
+    }else {
+        obj.className = "selected";
+        obj.style.backgroundColor = '#693906';
+        BaojiaJson_XCD['tsgy'] = '烫金/烫银/压点线/凹凸/压痕等工艺';
+        allPrice.tsgyBaoJia = '这部分需要人工额外报价';
     }
 
     //动态刷新计价表
@@ -407,7 +410,7 @@ function showPriceTable(){
 
     html += '</tr>'+
         '<tr>'+
-        '<td colspan="4"><h3 style="float: right">'+allPrice.allBaoJia+'</h3><p style="float: right;margin-right: 10px;">总价格:</p></td>'+
+        '<td colspan="4"><h3 style="float: right;margin-right: 17px;">'+allPrice.allBaoJia+'元</h3><p style="float: right;margin-right: 10px;">总价格 : </p></td>'+
         '</tr>'+
         '</tbody>'+
         '</table>'+
@@ -420,5 +423,10 @@ function showPriceTable(){
 
 $(".tipTab ul li").mouseenter(function(){
     $(this).siblings().removeClass('DetailsTCur').end().addClass('DetailsTCur');
+    //a 标签
+    $(this).children().css({
+        'border-top': '#6A3906 solid 9px',
+        'line-height': '51px'
+    });
     $('.tipContent div').hide().eq($(this).index()).show();
 });

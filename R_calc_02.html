@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <title>【报价】画册</title>
     <link type="text/css" rel="stylesheet" href="styles/reset.css">
-    <link type="text/css" rel="stylesheet" href="styles/calc_02.css">
+    <link type="text/css" rel="stylesheet" href="styles/R_calc_02.css">
 </head>
 <body>
     <div class="mainContent">
         <div class="item">
-            <div class="itemTitle">画册</div>
+            <!--<div class="itemTitle">画册</div>-->
             <div class="itemImg"></div>
             <div class="itemTable">
                 <table>
-                    <tbody id="tb">
+                    <tbody>
                         <tr>
-                            <td width="20%">材质</td>
+                            <td>材&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;质</td>
                             <td>
                                 <ul>
                                     <li><a href="javascript:void(0);" class="selected" onclick="SItemClick(this)" val="铜版纸" name="caizhi">铜版纸</a></li>
@@ -25,7 +25,7 @@
                             </td>
                         </tr>
                         <tr>
-                             <td width="20%">规格</td>
+                             <td>规&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格</td>
                              <td>
                                  <ul>
                                      <li><a href="javascript:void(0);" class="selected" name="chicun" val="A4及以下" onclick="SItemClick(this)">A4 (210x285mm)及以下</a></li>
@@ -35,7 +35,7 @@
                              </td>
                         </tr>
                         <tr>
-                             <td>克数</td>
+                             <td>克&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数</td>
                              <td>
                                  <ul>
                                      <li><a href="#" class="selected" name="keshu" val="157" onclick="SItemClick(this)">整本157克</a></li>
@@ -44,7 +44,7 @@
                              </td>
                         </tr>
                         <tr>
-                            <td>P数</td>
+                            <td>P&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数</td>
                             <td>
                                 <select name="pishu" onchange="SItemChange(this)">
                                     <option value="8" selected>8P</option>
@@ -75,18 +75,39 @@
                         <tr>
                             <td>普通工艺</td>
                             <td>
-                                <span>装裱类</span>
+                                <ul>
+                                    <li><a href="javascript:void(0);" name="zhuangbiao" onclick="displayZhuangBiao(this)">装&nbsp;&nbsp;&nbsp;裱</a></li>
+                                    <select id="zhuangbiao" name="zhuangbiao" style="display: none" onchange="SItemChange(this)">
+                                        <option value="骑马钉" selected>骑马钉</option>
+                                        <option value="无线胶装">无线胶装</option>
+                                        <option value="锁线胶装">锁线胶装</option>
+                                    </select>
+                                </ul>
+                                <!--<span>装裱类</span>
                                 <input type="checkbox" value="1" name="zhuangbiao" onclick="displayZhuangBiao(this)">
                                 <select id="zhuangbiao" name="zhuangbiao" style="display: none" onchange="SItemChange(this)">
                                     <option value="骑马钉" selected>骑马钉</option>
                                     <option value="无线胶装">无线胶装</option>
                                     <option value="锁线胶装">锁线胶装</option>
-                                </select>
+                                </select>-->
                             </td>
                         </tr>
                         <tr>
                             <td> </td>
-                            <td>过膜类</td>
+                            <td>
+                                <ul>
+                                    <li><a href="javascript:void(0);" name="fumo" onclick="displayFuMo(this)">覆&nbsp;&nbsp;&nbsp;膜</a></li>
+                                    <li>
+                                        <select id="fumo" name="fumo" style="display: none" onchange="SItemChange(this)">
+                                            <option value="封面封底单面覆光膜" selected>封面封底单面覆光膜</option>
+                                            <option value="封面封底双面覆光膜">封面封底双面覆光膜</option>
+                                            <option value="封面封底单面覆哑膜">封面封底单面覆哑膜</option>
+                                            <option value="封面封底双面覆哑膜">封面封底双面覆哑膜</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                            </td>
+                            <!--<td>过膜类</td>
                             <td>
                                 <input type="checkbox" id="fgm" name="fuguangmo" onclick="displayFuMo(this)">
                                 <span>覆光膜</span>
@@ -100,13 +121,15 @@
                                     <option value="封面封底单面覆哑膜" selected>封面封底单面覆哑膜</option>
                                     <option value="封面封底双面覆哑膜">封面封底双面覆哑膜</option>
                                 </select>
-                            </td>
+                            </td>-->
                         </tr>
                         <tr>
                             <td>特殊工艺</td>
                             <td>
-                                <input type="checkbox" id="tsgy" name="tsgy" onclick="selectTsgy(this)">
-                                <span>烫金、烫银、压点线、凹凸、压痕 等工艺，需要联系人工报价</span>
+                                <a href="javascript:void(0);" class="" id="tsgySelect" name="tsgy" onclick="selectTsgy(this)"></a>
+                                <p class="tsgySpan">烫金/烫银/压点线/凹凸/压痕等工艺需要联系人工报价</p>
+                                <!--<input type="checkbox" id="tsgy" name="tsgy" onclick="selectTsgy(this)">
+                                <span>烫金、烫银、压点线、凹凸、压痕 等工艺，需要联系人工报价</span>-->
                             </td>
                         </tr>
                     </tbody>
@@ -119,21 +142,21 @@
             <div class="itemTip">
                 <div class="tipTab">
                     <ul>
-                        <li class="DetailsTCur"><a href="javascript:void(0);">制作须知</a></li>
+                        <li class="DetailsTCur"><a href="javascript:void(0);">售后保障</a></li>
                         <li><a href="javascript:void(0);">配送方式</a></li>
-                        <li><a href="javascript:void(0);">售后保障</a></li>
+                        <li><a href="javascript:void(0);">制作须知</a></li>
                     </ul>
                 </div>
                 <div class="tipContent">
-                    <div class="tipOne" style="background-color: red;display: block;">1</div>
-                    <div class="tipOne" style="background-color: blue;display: none;">2</div>
-                    <div class="tipOne" style="background-color: yellow;display: none;">3</div>
+                    <div class="tipOne" style="display: none;">3</div>
+                    <div class="tipOne" style="display: none;">2</div>
+                    <div class="tipOne" style="display: block;">1</div>
                 </div>
             </div>
         </div>
     </div>
 
     <script src="js/jquery.min.js"></script>
-    <script src="js/calc_02.js"></script>
+    <script src="js/R_calc_02.js"></script>
 </body>
 </html>
