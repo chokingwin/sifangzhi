@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>【报价】喷绘</title>
+    <link type="text/css" rel="stylesheet" href="styles/reset.css">
+    <link type="text/css" rel="stylesheet" href="styles/R_calc_04.css">
+</head>
+<body>
+    <div class="mainContent">
+        <div class="item">
+            <!--<div class="itemTitle">喷绘</div>-->
+            <div class="itemSelect">
+                <div>
+                    <span>种&nbsp;&nbsp;&nbsp;类</span>
+                    <ul>
+                        <li><a href="javascript:void(0);" class="selected" onclick="SItemClick(this)" val="横幅" name="type">横幅</a></li>
+                        <li><a href="javascript:void(0);" onclick="SItemClick(this)" val="普通背胶海报" name="type">普通背胶海报</a></li>
+                        <li><a href="javascript:void(0);" onclick="SItemClick(this)" val="520灯布喷绘" name="type">520灯布喷绘</a></li>
+                        <li><a href="javascript:void(0);" onclick="SItemClick(this)" val="KT板" name="type">KT板</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="itemTable">
+                <div class="itemOne" style="display: block;">
+                    <div class="itemImg"></div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>规&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格</td>
+                                <td>
+                                    <ul>
+                                        <li><a href="javascript:void(0);" class="selected" onclick="SItemOneClick(this)" val="70" type="横幅"><=70</a></li>
+                                        <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="80" type="横幅"><=80</a></li>
+                                        <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="90" type="横幅"><=90</a></li>
+                                        <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="100" type="横幅"><=100</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>米&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数</td>
+                                <td>
+                                    <input type="text" belong="横幅" onchange="inputChange(this)">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="itemOne"style="display: none;">
+                    <div class="itemImg"></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>规&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格</td>
+                            <td>
+                                <ul>
+                                    <li><a href="javascript:void(0);" class="selected" onclick="SItemOneClick(this)" val="A2" type="普通背胶海报">A2</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="A1" type="普通背胶海报">A1</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="A0" type="普通背胶海报">A0</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量</td>
+                            <td>
+                                <input type="text" belong="普通背胶海报" onchange="inputChange(this)">
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="itemOne" style="display: none;">
+                    <div class="itemImg"></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>尺&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;寸</td>
+                            <td>
+                                <input type="text" belong="520灯布喷绘" name="width" onchange="inputChange2(this)"><span>*</span><input type="text" belong="520灯布喷绘" name="height" onchange="inputChange2(this)">
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="itemOne" style="display: none;">
+                    <div class="itemImg"></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>尺&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;寸</td>
+                            <td>
+                                <input type="text" belong="KT板" name="width" onchange="inputChange2(this)"><span>*</span><input type="text" belong="KT板" name="height" onchange="inputChange2(this)">
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="calc">
+                <button type="button" class="calcBtn" onclick="calc()">计算报价</button>
+            </div>
+            <div class="itemResult"></div>
+            <div class="itemTip">
+                <div class="tipTab">
+                    <ul>
+                        <li class="DetailsTCur"><a href="javascript:void(0);">售后保障</a></li>
+                        <li><a href="javascript:void(0);">配送方式</a></li>
+                        <li><a href="javascript:void(0);">制作须知</a></li>
+                    </ul>
+                </div>
+                <div class="tipContent">
+                    <div class="tipOne" style="display: none;">3</div>
+                    <div class="tipOne" style="display: none;">2</div>
+                    <div class="tipOne" style="display: block;">1</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/R_calc_04.js"></script>
+</body>
+</html>

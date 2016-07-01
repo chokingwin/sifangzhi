@@ -20,15 +20,18 @@
     <favorites_list name="code" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6675448">
+    <splitter split-orientation="horizontal" split-proportion="0.4130031">
       <split-first>
         <leaf>
-          <file leaf-file-name="R_calc_02.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/R_calc_02.html">
+          <file leaf-file-name="R_calc_04.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/R_calc_04.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-15.051282">
-                  <caret line="152" column="47" selection-start-line="152" selection-start-column="47" selection-end-line="152" selection-end-column="47" />
+                <state vertical-scroll-proportion="-10.743589">
+                  <caret line="89" column="69" selection-start-line="89" selection-start-column="33" selection-end-line="89" selection-end-column="69" />
                   <folding>
+                    <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#2;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#style#0;n#div#0;n#div#1;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#1;n#div#1;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#2;n#div#1;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -37,75 +40,22 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="R_calc_02.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/styles/R_calc_02.css">
+          <file leaf-file-name="R_calc_04.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/styles/R_calc_04.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+                  <caret line="274" column="30" selection-start-line="274" selection-start-column="30" selection-end-line="274" selection-end-column="30" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="R_calc_02.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/R_calc_02.js">
+          <file leaf-file-name="R_calc_04.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/js/R_calc_04.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-                  <folding>
-                    <marker date="1467342644286" expanded="true" signature="12563:12595" placeholder="..." />
-                    <marker date="1467342644286" expanded="true" signature="12635:12667" placeholder="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="R_calc_03.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/R_calc_03.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-14.282051">
-                  <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
-                  <folding>
-                    <element signature="n#style#0;n#div#0;n#div#1;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#1;n#div#1;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#2;n#div#1;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="R_calc_03.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/styles/R_calc_03.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="236" column="18" selection-start-line="236" selection-start-column="18" selection-end-line="236" selection-end-column="18" />
+                <state vertical-scroll-proportion="0.79910713">
+                  <caret line="279" column="0" selection-start-line="279" selection-start-column="0" selection-end-line="279" selection-end-column="0" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="R_calc_03.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/js/R_calc_03.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.421875">
-                  <caret line="144" column="15" selection-start-line="144" selection-start-column="15" selection-end-line="144" selection-end-column="15" />
-                  <folding>
-                    <marker date="1467353953940" expanded="true" signature="6678:6710" placeholder="..." />
-                    <marker date="1467353953940" expanded="true" signature="6750:6781" placeholder="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="calc_03.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/calc_03.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-11.6">
-                  <caret line="159" column="8" selection-start-line="159" selection-start-column="8" selection-end-line="159" selection-end-column="40" />
-                  <folding>
-                    <marker date="1465892446414" expanded="true" signature="6459:6471" placeholder="..." />
-                    <marker date="1465892446414" expanded="true" signature="6510:6542" placeholder="..." />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -114,11 +64,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="R_calc_01.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/R_calc_01.html">
+          <file leaf-file-name="R_calc_05.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/R_calc_05.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-10.769231">
-                  <caret line="116" column="32" selection-start-line="116" selection-start-column="32" selection-end-line="117" selection-end-column="82" />
+                <state vertical-scroll-proportion="-28.461538">
+                  <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#div#1;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#1;n#div#1;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -128,25 +78,22 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="R_calc_01.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/styles/R_calc_01.css">
+          <file leaf-file-name="R_calc_05.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/styles/R_calc_05.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-17.866667">
-                  <caret line="235" column="16" selection-start-line="235" selection-start-column="16" selection-end-line="235" selection-end-column="16" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="92" column="23" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="R_calc_01.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/js/R_calc_01.js">
+          <file leaf-file-name="R_calc_05.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/js/R_calc_05.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.38839287">
-                  <caret line="262" column="24" selection-start-line="262" selection-start-column="24" selection-end-line="262" selection-end-column="24" />
-                  <folding>
-                    <marker date="1467280089360" expanded="true" signature="11490:11522" placeholder="..." />
-                    <marker date="1467280089360" expanded="true" signature="11562:11593" placeholder="..." />
-                  </folding>
+                <state vertical-scroll-proportion="-12.794642">
+                  <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -195,6 +142,12 @@
         <option value="$PROJECT_DIR$/styles/R_calc_03.css" />
         <option value="$PROJECT_DIR$/R_calc_03.html" />
         <option value="$PROJECT_DIR$/js/R_calc_03.js" />
+        <option value="$PROJECT_DIR$/R_calc_04.html" />
+        <option value="$PROJECT_DIR$/js/R_calc_04.js" />
+        <option value="$PROJECT_DIR$/R_calc_05.html" />
+        <option value="$PROJECT_DIR$/styles/R_calc_04.css" />
+        <option value="$PROJECT_DIR$/styles/R_calc_05.css" />
+        <option value="$PROJECT_DIR$/js/R_calc_05.js" />
       </list>
     </option>
   </component>
@@ -296,9 +249,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\git\sifangzhi\js" />
-      <recent name="G:\git\sifangzhi\styles" />
       <recent name="G:\git\sifangzhi" />
+      <recent name="G:\git\sifangzhi\styles" />
+      <recent name="G:\git\sifangzhi\js" />
       <recent name="C:\Users\Administrator\Desktop\sifangzhi\code\styles" />
       <recent name="C:\Users\Administrator\Desktop\sifangzhi\code\js" />
     </key>
@@ -395,48 +348,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/calc_05.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/calc_05.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/calc_05.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/calc_04.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/calc_04.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="164" column="44" selection-start-line="164" selection-start-column="44" selection-end-line="164" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/calc_04.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/calc_02.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.09793253">
@@ -546,13 +457,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.615385">
           <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/calc_05.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="235" column="37" selection-start-line="235" selection-start-column="37" selection-end-line="235" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -686,22 +590,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/R_calc_02.html">
+    <entry file="file://$PROJECT_DIR$/js/calc_03.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.051282">
-          <caret line="152" column="47" selection-start-line="152" selection-start-column="47" selection-end-line="152" selection-end-column="47" />
+        <state vertical-scroll-proportion="-11.6">
+          <caret line="159" column="8" selection-start-line="159" selection-start-column="8" selection-end-line="159" selection-end-column="40" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#1;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1465892446414" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1465892446414" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/R_calc_01.html">
+    <entry file="file://$PROJECT_DIR$/js/R_calc_03.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.769231">
-          <caret line="116" column="32" selection-start-line="116" selection-start-column="32" selection-end-line="117" selection-end-column="82" />
+        <state vertical-scroll-proportion="0.421875">
+          <caret line="144" column="15" selection-start-line="144" selection-start-column="15" selection-end-line="144" selection-end-column="15" />
+          <folding>
+            <marker date="1467353953940" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1467353953940" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/R_calc_03.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.765625">
+          <caret line="236" column="18" selection-start-line="236" selection-start-column="18" selection-end-line="236" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/R_calc_03.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6499417">
+          <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -712,35 +634,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/R_calc_02.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.13392857">
           <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
           <folding>
-            <marker date="1467342644286" expanded="true" signature="12563:12595" placeholder="..." />
-            <marker date="1467342644286" expanded="true" signature="12635:12667" placeholder="..." />
+            <marker date="1467342644286" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1467342644286" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/R_calc_02.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.77008927">
           <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/R_calc_01.css">
+    <entry file="file://$PROJECT_DIR$/R_calc_02.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.866667">
-          <caret line="235" column="16" selection-start-line="235" selection-start-column="16" selection-end-line="235" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/R_calc_03.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.282051">
-          <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.6849475">
+          <caret line="152" column="47" selection-start-line="152" selection-start-column="47" selection-end-line="152" selection-end-column="47" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -749,44 +663,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/R_calc_03.css">
+    <entry file="file://$PROJECT_DIR$/js/calc_05.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="236" column="18" selection-start-line="236" selection-start-column="18" selection-end-line="236" selection-end-column="18" />
+        <state vertical-scroll-proportion="-0.27232143">
+          <caret line="373" column="18" selection-start-line="373" selection-start-column="18" selection-end-line="373" selection-end-column="18" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/calc_03.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.6">
-          <caret line="159" column="8" selection-start-line="159" selection-start-column="8" selection-end-line="159" selection-end-column="40" />
-          <folding>
-            <marker date="1465892446414" expanded="true" signature="6459:6471" placeholder="..." />
-            <marker date="1465892446414" expanded="true" signature="6510:6542" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/R_calc_01.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38839287">
-          <caret line="262" column="24" selection-start-line="262" selection-start-column="24" selection-end-line="262" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.79910713">
+          <caret line="406" column="0" selection-start-line="406" selection-start-column="0" selection-end-line="406" selection-end-column="0" />
           <folding>
-            <marker date="1467280089360" expanded="true" signature="11490:11522" placeholder="..." />
-            <marker date="1467280089360" expanded="true" signature="11562:11593" placeholder="..." />
+            <marker date="1467280089360" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1467280089360" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/R_calc_03.js">
+    <entry file="file://$PROJECT_DIR$/styles/R_calc_01.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.421875">
-          <caret line="144" column="15" selection-start-line="144" selection-start-column="15" selection-end-line="144" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.7575058">
+          <caret line="73" column="30" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/R_calc_01.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52508754">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
           <folding>
-            <marker date="1467353953940" expanded="true" signature="6678:6710" placeholder="..." />
-            <marker date="1467353953940" expanded="true" signature="6750:6781" placeholder="..." />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/R_calc_04.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.743589">
+          <caret line="89" column="69" selection-start-line="89" selection-start-column="33" selection-end-line="89" selection-end-column="69" />
+          <folding>
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/R_calc_05.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-28.461538">
+          <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/R_calc_04.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="274" column="30" selection-start-line="274" selection-start-column="30" selection-end-line="274" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/R_calc_05.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="92" column="23" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/R_calc_05.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.794642">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/R_calc_04.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.79910713">
+          <caret line="279" column="0" selection-start-line="279" selection-start-column="0" selection-end-line="279" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
