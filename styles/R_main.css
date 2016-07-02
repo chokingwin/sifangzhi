@@ -39,15 +39,15 @@ a {
 
 /*logoBar*/
 .logoBar{
-    height: 85px;
-    background-color: #1D7AD9;
+    height: 170px;
+    background-color: #FFFFFF;
 }
 /*logo*/
 .logo{
     padding-left: 41px;
     padding-top: 13px;
-    width: 60px;
-    height: 72px;
+    width: 155px;
+    height: 155px;
 }
 .logo img{
     width: 100%;
@@ -109,7 +109,7 @@ a {
     font-family: "Microsoft Yahei", "微软雅黑";
 }
 .shopClass{
-    width: 190px;
+    width: 260px;
     position: relative;
 }
 /*.shopClass i{
@@ -126,6 +126,7 @@ a {
 }
 .shopClass h3, .nav{
     font-family: "Microsoft Yahei", "微软雅黑";
+    font-size: 18px;
 }
 .nav{
     line-height: 40px;
@@ -150,8 +151,9 @@ a {
     color: #FFFFFF;
     position: absolute;
     left: 0px;
-    top: 40px;
+    top: 78px;
     width: 260px;
+    height: 490px;
 }
 .shopClass_show dt{
     height: 22px;
@@ -185,31 +187,46 @@ a {
 }
 /*shopClass_item active 状态*/
 .shopClass_item:hover{
-    background-color: #FFFFFF;
-    border-left: #4593FD solid 1px;
+    background-color: #BBA793;
+/*    border-left: #4593FD solid 1px;*/
 }
 .shopClass_item:hover dt{
     background: none;
 }
-.shopClass_item:hover a{
+/*.shopClass_item:hover a{
     color: #000000;
-}
+}*/
 .shopClass_item:hover .aLink{
     color: #FFFFFF;
     text-decoration: none;
 }
+.shopClass_item:hover .arrow-left{
+    display: block;
+}
 .shopClass_item:hover .subMenu ul{
     display: block;
 }
+.arrow-left {
+    display: none;
+    width:0;
+    height:0;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+    border-right:9px solid #BBA793;
+    position: absolute;
+    left: 271px;
+    top: 35px;
+}
+
 /*subMenu*/
 .subMenu{
     position: absolute;
-    left: 190px;
+    left: 280px;
     top: -15px;
     z-index: 6;
     display: block;
     width: 230px;
-    background-color: #FFFFFF;
+    background-color: #BBA793;
     /*border: #cccccc solid 1px;*/
 }
 .subMenu ul{
@@ -217,15 +234,23 @@ a {
 }
 .subMenu li{
     list-style-type: none;
-    height: 50px;
+    /*height: 50px;
     line-height: 50px;
     text-align: center;
     color: #000000;
     font-family: "Microsoft Yahei", "微软雅黑";
     font-size: 14px;
-    border-bottom: #cccccc solid 1px;
+    border-bottom: #cccccc solid 1px;*/
 }
-
+.subMenu a{
+    display: block;
+    font-family: "Microsoft Yahei", "微软雅黑";
+    font-size: 14px;
+    color: #FFFFFF;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
 
 /*弹出菜单*/
 .shopClass_list{
@@ -285,6 +310,7 @@ a {
     float: right;
     position: relative;
     overflow: hidden;
+    margin-top: 38px;
 }
 .imgBox{
     width: 1600px;
