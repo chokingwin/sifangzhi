@@ -21,23 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="R_index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/R_index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.75262547">
-              <caret line="50" column="47" selection-start-line="50" selection-start-column="47" selection-end-line="50" selection-end-column="47" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="R_main.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="R_main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/styles/R_main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="308" column="18" selection-start-line="308" selection-start-column="18" selection-end-line="308" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.7921478">
+              <caret line="278" column="1" selection-start-line="278" selection-start-column="1" selection-end-line="278" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -97,8 +85,8 @@
         <option value="$PROJECT_DIR$/R_calc_10.html" />
         <option value="$PROJECT_DIR$/styles/R_calc_10.css" />
         <option value="$PROJECT_DIR$/js/R_calc_10.js" />
-        <option value="$PROJECT_DIR$/styles/R_main.css" />
         <option value="$PROJECT_DIR$/R_index.html" />
+        <option value="$PROJECT_DIR$/styles/R_main.css" />
       </list>
     </option>
   </component>
@@ -675,21 +663,19 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/R_main.css">
+    <entry file="file://$PROJECT_DIR$/R_index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="308" column="18" selection-start-line="308" selection-start-column="18" selection-end-line="308" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.12485414">
+          <caret line="153" column="22" selection-start-line="153" selection-start-column="22" selection-end-line="153" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/R_index.html">
+    <entry file="file://$PROJECT_DIR$/styles/R_main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75262547">
-          <caret line="50" column="47" selection-start-line="50" selection-start-column="47" selection-end-line="50" selection-end-column="47" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.7921478">
+          <caret line="278" column="1" selection-start-line="278" selection-start-column="1" selection-end-line="278" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
