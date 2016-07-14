@@ -20,7 +20,10 @@ a {
     display: block;
 }
 
-
+/*main*/
+.main{
+    min-height: 600px;
+}
 
 /*topBar*/
 .topBar{
@@ -210,6 +213,11 @@ a {
 .subMenu li{
     list-style-type: none;
 }
+.subMenu li:hover{
+    list-style-type: none;
+    background-color: rgba(187, 167, 147, 0.51);
+    color: #6A3906;
+}
 .subMenu a{
     display: block;
     font-family: "Microsoft Yahei", "微软雅黑";
@@ -218,6 +226,9 @@ a {
     height: 50px;
     line-height: 50px;
     text-align: center;
+}
+.subMenu a:hover{
+    color: #6A3906;
 }
 .subMenu:hover .subMenu ul{
     display: block;
@@ -276,4 +287,10 @@ a {
 
 .imgNum .active{
     background-color: #BBA793;
+}
+
+/*footer*/
+.footer{
+    font: 14px/1.5 "PingFang SC", Helvetica, "Helvetica Neue", "微软雅黑", Tahoma, Arial, sans-serif;
+    text-align: center;
 }

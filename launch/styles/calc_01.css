@@ -125,11 +125,6 @@
     font-weight: bold;
     color: #FFFFFF;
     padding: 10px 28px;
-    background-color: #B59C83;
-    border: #B59C83 solid 1px;
-    border-radius: 50px;
-}
-.calcBtn:hover{
     background-color: #693906;
     border: #693906 solid 1px;
     border-radius: 50px;
