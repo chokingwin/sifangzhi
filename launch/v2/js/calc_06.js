@@ -178,13 +178,3 @@ function showPriceTable(){
     $('.itemResult').append(html);
 }
 
-
-$(".tipTab ul li").mouseenter(function(){
-    $(this).siblings().removeClass('DetailsTCur').end().addClass('DetailsTCur');
-    //a 标签
-    $(this).children().css({
-        'border-top': '#6A3906 solid 9px',
-        'line-height': '51px'
-    });
-    $('.tipContent div').hide().eq($(this).index()).show();
-});

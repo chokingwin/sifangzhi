@@ -244,8 +244,3 @@ function showPriceTable(){
     $('.itemResult').append(html);
 }
 
-
-$(".tipTab ul li").mouseenter(function(){
-    $(this).siblings().removeClass('DetailsTCur').end().addClass('DetailsTCur');
-    $('.tipContent div').hide().eq($(this).index()).show();
-});

@@ -2,22 +2,6 @@
  * Created by chokingwin on 2016-06-30.
  */
 
-function SItemClick2(obj) {
-    var parobj = obj.parentNode.parentNode; //ul
-    console.log(parobj.tagName);
-    var pars = parobj.childNodes;           //li
-    console.log(pars[1].tagName);
-    alert(pars.length);
-    for (var i = 0; i < pars.length; i++) {
-        console.log(pars[i].tagName);
-        if (!!pars[i].tagName) { pars[i].firstChild.className = ""; }
-    }
-    obj.className = "selected";
-    obj.blur();
-    //$("#" + parobj.lang).val(obj.lang);
-    console.log(obj.lang);
-}
-
 //宣传单、折页的报价json数据组
 var BaojiaJson_XCD = {
     'caizhi':'铜版纸',
@@ -395,25 +379,4 @@ function showPriceTable(){
 }
 
 
-$(".tipTab ul li").mouseenter(function(){
-    $(this).siblings().removeClass('DetailsTCur').end().addClass('DetailsTCur');
-    //a 标签
-    $(this).children().css({
-        'border-top': '#6A3906 solid 9px',
-        'line-height': '51px'
-    });
-    $('.tipContent div').hide().eq($(this).index()).show();
-});
 
-$(".itemImg").mouseenter(function(){
-    $(".img_cover").stop().animate({opacity: "0.5"});
-    $(".left_line").stop().animate({opacity: "1",left:"150px"});
-    $(".right_line").stop().animate({opacity: "1",right:"150px"});
-    $(".img_desc").stop().animate({opacity: "1",top: "0"});
-});
-$(".itemImg").mouseleave(function(){
-    $(".img_cover").stop().animate({opacity: "0"});
-    $(".left_line").stop().animate({opacity: "0",left:"100px"});
-    $(".right_line").stop().animate({opacity: "0",right:"100px"});
-    $(".img_desc").stop().animate({opacity: "0",top: "20px"});
-});
