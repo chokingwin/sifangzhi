@@ -1,0 +1,205 @@
+.mainContent{
+    width: 800px;
+    min-height: 1781px;
+    background-color: #F1F1F1;
+    float: right;
+    margin-top: 38px;
+}
+
+.item{
+    float: left;
+    margin: 8px 8px;
+    width: 784px;
+}
+
+/*itemTitle*/
+.itemTitle{
+    color: #FFFFFF;
+    background-color: #ff7077;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
+    height: 35px;
+    line-height: 35px;
+    text-align: left;
+}
+
+/*itemImg*/
+.itemImg{
+    height: 150px;
+    width: 100%;
+    background:linear-gradient(#e4e0ba, #f7d9aa);
+    position: relative;
+}
+.img_cover{
+    position: absolute;
+    z-index: 5;
+    background-color: #000000;
+    height: 150px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.left_line{
+    position: absolute;
+    z-index: 6;
+    width: 30px;
+    height: 1px;
+    background-color: #FFFFFF;
+    top: 75px;
+    left: 100px;
+    opacity: 0;
+}
+.right_line{
+    position: absolute;
+    z-index: 6;
+    width: 30px;
+    height: 1px;
+    background-color: #FFFFFF;
+    top: 75px;
+    right: 100px;
+    opacity: 0;
+}
+.img_desc{
+    display: table;
+    position: absolute;
+    z-index: 6;
+    width: 50%;
+    height: 150px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Helvitica Neue",Helvitica,Arial,"Hiragino Sans GB","Microsoft YaHei","Arial Regular","Microsoft JhengHei",sans-serif;
+    color: #FFFFFF;
+    left: 200px;
+    top: 20px;
+    opacity: 0;
+    word-wrap: break-word;
+}
+.img_desc_word{
+    display: table-cell;
+    vertical-align:middle;
+}
+
+/*calc*/
+.calc{
+    height: 100px;
+}
+.calcBtn{
+    float: right;
+    margin: 20px 20px;
+    font-size: 20px;
+    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 10px 28px;
+    background-color: #693906;
+    border: #693906 solid 1px;
+    border-radius: 50px;
+}
+
+/*itemResult*/
+.itemResult{
+    margin-top: 10px;
+}
+.resultTitle{
+    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
+    font-size: 12px;
+    font-weight: bold;
+    color: #693906;
+    height: 35px;
+    line-height: 35px;
+    margin-left: 16px;
+}
+.resultTable{
+    margin: 10px 16px;
+}
+.resultTable table{
+    width: 100%;
+    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+/*Å¼ÊýÐÐ*/
+.resultTable table tr:nth-child(even) > td{
+    background-color: #93704D;
+}
+/*ÆæÊýÐÐ*/
+.resultTable table tr:nth-child(odd) > td{
+    background-color: #AE957C;
+}
+.resultTable tr{
+    height: 50px;
+}
+.resultTable td{
+    text-align: center;
+}
+.resultTable td:first-child {
+    text-align: center;
+}
+
+/*itemTip*/
+.itemTip{
+    margin: 24px 16px;
+    position: relative;
+}
+
+.itemTip .tipTab{
+    height: 60px;
+    margin-right: 350px;
+}
+
+.tipTab a{
+    display: inline-block;
+    height: 60px;
+    width: 144px;
+    line-height: 60px;
+    font-size: 16px;
+    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
+    font-weight: bold;
+    text-align: center;
+    color: #6A3906;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1);
+    /*border-top: #6A3906 solid 9px;*/
+}
+
+.tipTab li{
+    float: right;
+    margin-left: -15px;
+}
+
+.DetailsTCur > .tipTab > a{
+    display: inline-block;
+    height: 60px;
+    width: 144px;
+    line-height: 60px;
+    font-size: 16px;
+    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
+    font-weight: bold;
+    text-align: center;
+    color: #6A3906;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1);
+    border-top: #6A3906 solid 9px;
+}
+
+.tipContent{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 752px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+}
+.tipOne {
+    width: 100%;
+    height: 200px;
+    font-size: 30px;
+    line-height: 200px;
+    text-align: center;
+}

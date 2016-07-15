@@ -1,0 +1,123 @@
+
+/*itemSelect*/
+.itemSelect{
+    margin: 15px 0 0 10px;
+    height: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
+    color: #693906;
+}
+.itemSelect span{
+    float: left;
+    font-size: 16px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
+    width: 65px;
+    margin: 3px 20px 0 0;
+}
+
+.itemSelect li{
+    float: left;
+    margin-right: 20px;
+}
+.itemSelect li a{
+    display: inline-block;
+    min-width: 40px;
+    height: 25px;
+    line-height: 25px;
+    border: #ABAAAB solid 2px;
+    border-radius: 1px;
+    color: #693906;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+.itemSelect a:hover{
+    border: #693906 solid 2px;
+}
+.itemSelect .selected{
+    color: #FFFFFF;
+    background-color: #693906;
+    border: #693906 solid 2px;
+}
+
+/*itemTable*/
+.itemTable{
+    margin-top: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
+    color: #693906;
+}
+
+.itemTable tr{
+    height: 45px;
+    display: table-row;
+}
+.itemTable tr td:first-child{
+    width: 64px;
+    text-align: center;
+    /*margin-right: 17px;*/
+}
+.itemTable tr td:last-child{
+    padding-left: 17px;
+}
+.itemTable li{
+    float: left;
+    margin-right: 15px;
+}
+.itemTable li a{
+    display: inline-block;
+    min-width: 40px;
+    height: 25px;
+    line-height: 25px;
+    border: #ABAAAB solid 2px;
+    border-radius: 1px;
+    color: #693906;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+.itemTable li a:hover{
+    border: #693906 solid 2px;
+}
+.itemTable .selected{
+    color: #FFFFFF;
+    background-color: #693906;
+    border: #693906 solid 2px;
+}
+.itemTable select{
+    height: 29px;
+    border: #693906 solid 2px;
+    color: #693906;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
+    padding-left: 10px;
+}
+.itemTable .qqLink{
+    border: none;
+    display: none;
+}
+.itemTable .qqLink:hover{
+    border: none;
+    display: none;
+}
+
+/*itemOne*/
+.itemOne{
+    border: #693906 solid 1px;
+    margin: 5px 10px;
+}
+.itemOne input{
+    width: 100px;
+    height:20px;
+    border: #693906 solid 2px;
+    padding-left: 5px
+}
+.itemOne span{
+    margin: 0 5px;
+}

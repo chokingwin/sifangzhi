@@ -1,0 +1,250 @@
+/*公用*/
+.comWidth{
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.leftArea{
+    float: left;
+}
+.rightArea{
+    float: right;
+}
+a {
+    color: #656565;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+/*main*/
+.main{
+    min-height: 600px;
+}
+
+/*topBar*/
+.topBar{
+    height: 31px;
+    background-color: #F7F7F7;
+    line-height: 31px;
+}
+.collection{
+    background: url("../images/icon/collection.jpg") left center no-repeat;
+    padding-left: 17px;
+    font-weight: bold;
+}
+.topBar a:hover{
+    color: red;
+}
+
+/*logoBar*/
+.logoBar{
+    height: 170px;
+    background-color: #FFFFFF;
+}
+/*logo*/
+.logo{
+    padding-left: 41px;
+    padding-top: 13px;
+    width: 155px;
+    height: 155px;
+}
+.logo img{
+    width: 100%;
+}
+
+/*navBox*/
+.navBox{
+    height: 40px;
+    background-color: #6A3906;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: "Microsoft Yahei", "微软雅黑";
+}
+.navBox .nav{
+    font-family: "Microsoft Yahei", "微软雅黑";
+    font-size: 18px;
+    margin-left: 76px;
+}
+
+.nav li{
+    margin-right: 35px;
+}
+.nav li:first-child{
+    margin-right: 75px;
+}
+.nav li:first-child:hover{
+    background-color: #6A3906;
+}
+.nav{
+    line-height: 40px;
+}
+.nav li{
+    float: left;
+}
+.nav a{
+    height: 40px;
+    display: inline-block;
+    padding: 0 25px;
+    color: #FFFFFF;
+}
+.nav li:hover{
+    background-color: #B59C83;
+}
+
+/*商品分类列表*/
+.shopClass_show{
+    background-color: #B59C83;
+    color: #FFFFFF;
+    width: 260px;
+    height: auto;
+    float: left;
+    margin-top: 38px;
+    font-family: "Microsoft Yahei", "微软雅黑";
+    font-weight: normal;
+    padding-bottom: 15px;
+}
+.shopClass_show dt{
+    height: 32px;
+    font-size: 18px;
+}
+.shopClass_show dd{
+    font-size: 16px;
+}
+.shopClass_show a{
+    color: #FFFFFF;
+}
+.shopClass_itemOuter{
+    padding: 0 8px;
+}
+.shopClass_item{
+    padding: 14px 10px;
+    border-bottom: #FFFFFF solid 1px;
+    position: relative;
+}
+.sub{
+    display: none;
+}
+.transparent{
+    display: block;
+    width: 29px;
+    height: 100px;
+    position: absolute;
+    left: 252px;
+    top: 0;
+    z-index: 10;
+}
+.arrow-left {
+    display: block;
+    width:0;
+    height:0;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+    border-right:9px solid #BBA793;
+    position: absolute;
+    left: 263px;
+    top: 35px;
+}
+
+/*subMenu*/
+.subMenu{
+    position: absolute;
+    left: 272px;
+    top: 0px;
+    z-index: 6;
+    display: block;
+    width: 230px;
+    background-color: #BBA793;
+    border-radius: 5px;
+}
+.subMenu ul{
+    display: block;
+}
+.subMenu li{
+    list-style-type: none;
+}
+.subMenu li:hover{
+    list-style-type: none;
+    background-color: rgba(187, 167, 147, 0.51);
+    color: #6A3906;
+}
+.subMenu a{
+    display: block;
+    font-family: "Microsoft Yahei", "微软雅黑";
+    font-size: 14px;
+    color: #FFFFFF;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.subMenu a:hover{
+    color: #6A3906;
+}
+.subMenu:hover .subMenu ul{
+    display: block;
+}
+
+/*shopClass_item active 状态*/
+.shopClass_itemOuter:hover{
+    background-color: #BBA793;
+}
+
+.shopClass_itemOuter:hover .sub{
+    display: block;
+}
+
+/*banner部分*/
+.banner_bar{
+    width: 800px;
+    height: 425px;
+    float: right;
+    position: relative;
+    overflow: hidden;
+    margin-top: 38px;
+}
+.imgBox{
+    width: 1600px;
+    height: 425px;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+.imgBox li{
+    float: left;
+}
+.imgBox img{
+    width: 800px;
+    height: 425px;
+    display: block;
+}
+.imgNum{
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+.imgNum a{
+    width: 20px;
+    height: 5px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.imgNum .active{
+    background-color: #BBA793;
+}
+
+/*footer*/
+.footer{
+    font: 14px/1.5 "PingFang SC", Helvetica, "Helvetica Neue", "微软雅黑", Tahoma, Arial, sans-serif;
+    text-align: center;
+}
