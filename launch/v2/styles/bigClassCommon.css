@@ -1,0 +1,46 @@
+/* *_classification.html中用到的样式 */
+
+/*itemSelect*/
+.itemSelect{
+    margin: 15px 10px;
+    height: 29px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Microsoft Yahei", "微软雅黑";
+    color: #693906;
+}
+.itemSelect span{
+    float: left;
+    font-size: 16px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-family: "Microsoft Yahei", "微软雅黑";
+    width: 65px;
+    margin: 3px 20px 0 0;
+}
+
+.itemSelect li{
+    float: left;
+    margin-right: 20px;
+}
+.itemSelect li a{
+    display: inline-block;
+    min-width: 40px;
+    height: 25px;
+    line-height: 25px;
+    border: #ABAAAB solid 2px;
+    border-radius: 1px;
+    color: #693906;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+.itemSelect a:hover{
+    border: #693906 solid 2px;
+}
+.itemSelect .selected{
+    color: #FFFFFF;
+    background-color: #693906;
+    border: #693906 solid 2px;
+}

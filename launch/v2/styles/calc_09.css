@@ -1,8 +1,15 @@
 
+/*iframeContent*/
+.iframeContent{
+    width: 784px;
+    min-height: 1781px;
+    background-color: #F1F1F1;
+}
+
 /*itemSelect*/
 .itemSelect{
-    margin: 15px 0 0 10px;
-    height: 25px;
+    margin: 15px 10px;
+    height: 29px;
     font-size: 14px;
     font-weight: bold;
     font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";

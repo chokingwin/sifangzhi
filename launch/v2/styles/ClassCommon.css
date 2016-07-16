@@ -1,3 +1,5 @@
+
+/* calc_*.html中用到的样式 */
 .mainContent{
     width: 800px;
     min-height: 1781px;
@@ -8,7 +10,6 @@
 
 .item{
     float: left;
-    margin: 8px 8px;
     width: 784px;
 }
 

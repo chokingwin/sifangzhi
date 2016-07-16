@@ -2,22 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>彩印狮</title>
+    <title>展架印品</title>
     <link type="text/css" rel="stylesheet" href="styles/reset.css">
+    <link type="text/css" rel="stylesheet" href="styles/bigClassCommon.css">
     <link type="text/css" rel="stylesheet" href="styles/main.css">
+    <link type="text/css" rel="stylesheet" href="styles/ClassCommon.css">
 </head>
 <body>
 <div class="headerBar">
-    <!--<div class="topBar">
-        <div class="comWidth">
-            <div class="leftArea" >
-                <a href="#" class="collection">收藏四方志</a>
-            </div>
-            <div class="rightArea">
-                欢迎来到四方志设计创意！<a href="#"> [登录]</a><a href="#">[免费注册]</a>
-            </div>
-        </div>
-    </div>-->
     <div class="logoBar">
         <div class="comWidth">
             <div class="logo fl">
@@ -30,7 +22,7 @@
             <ul class="nav fl">
                 <li>所有物料分类</li>
                 <li><a href="index.html">首页</a></li>
-                <li><a href="javascript:defLocation('xc_classification.html','calc_01');">印刷下单报价</a></li>
+                <li><a href="calc_01.html">印刷下单报价</a></li>
                 <li><a href="#">我要设计狮</a></li>
                 <li><a href="#">印刷常识</a></li>
                 <li><a href="#">关于我们</a></li>
@@ -95,8 +87,8 @@
                     <div class="subMenu">
                         <ul>
                             <li><a href="calc_09_1.html">X展架/门型展架</a></li>
-                            <li><a href="calc_09_2.html">易拉宝</a></li>
-                            <li><a href="calc_09_3.html">拉网展架</a></li>
+                            <li><a href="calc_09_1.html">易拉宝</a></li>
+                            <li><a href="calc_09_1.html">拉网展架</a></li>
                             <li><a href="#">指示牌/挂画架</a></li>
                             <li><a href="#">画框</a></li>
                             <li><a href="#">人像架</a></li>
@@ -136,26 +128,32 @@
                         <dd></dd>
                     </dl>
                 </a>
-
             </div>
         </div>
     </div>
-    <div class="banner">
-        <div class="banner_bar">
-            <ul class="imgBox">
-                <li><a href="#"><img src="images/banner/banner_01.jpg" alt="banner"></a></li>
-                <li><a href="#"><img src="images/banner/banner_02.jpg" alt="banner"></a></li>
-            </ul>
-            <div class="imgNum">
-                <a href="#" class="active"></a><a href="#"></a>
+    <div class="mainContent">
+        <div class="item" style="margin:8px 8px;">
+            <div class="itemSelect">
+                <div>
+                    <span>分&nbsp;&nbsp;&nbsp;类</span>
+                    <ul>
+                        <li><a href="javascript:void(0);" class="selected" onclick="SChangeIframe(this)" val="calc_01">宣传单/折页</a></li>
+                        <li><a href="javascript:void(0);" onclick="SChangeIframe(this)" val="calc_02">宣传册</a></li>
+                        <li><a href="javascript:void(0);" onclick="SChangeIframe(this)" val="calc_03">不干胶</a></li>
+                        <li><a href="javascript:void(0);" onclick="SChangeIframe(this)" val="calc_04">喷绘</a></li>
+                        <li><a href="javascript:void(0);" onclick="SChangeIframe(this)" val="#">商务礼品</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="iframe">
+                <iframe src="calc_01.html" id="iframepage" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="1781" width="784" onLoad="iFrameHeight()"></iframe>
             </div>
         </div>
     </div>
 </div>
-<div class="footer comWidth">
-    <p>Copyright © 2016 sfzlion.com All Rights Reserved | 粤ICP备 16062991号</p>
-</div>
 
+<script src="js/jquery.min.js"></script>
 <script src="js/ClassCommon.js"></script>
+<script src="js/bigClassCommon.js"></script>
 </body>
 </html>
