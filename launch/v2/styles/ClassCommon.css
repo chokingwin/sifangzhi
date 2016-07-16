@@ -1,4 +1,9 @@
-
+.bg1080{
+    width: 1080px;
+    background-color: #F1F1F1;
+    margin: 35px auto;
+    border: 1px solid transparent;
+}
 /* calc_*.html中用到的样式 */
 .mainContent{
     width: 800px;

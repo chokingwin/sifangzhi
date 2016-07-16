@@ -1,0 +1,75 @@
+.aboutusLogo{
+    width: 167px;
+    height: 224px;
+    margin: 23px auto 0;
+}
+.aboutusLogo img{
+    width: 100%;
+    height: 100%;
+}
+.aboutusContent{
+    margin: 40px 25px 0 17px;
+    color: #C3995D;
+    font-family: "Microsoft Yahei";
+}
+.oneContent{
+    margin-bottom: 60px;
+    position: relative;
+}
+.title{
+    font-size: 30px;
+    padding-bottom: 40px;
+    margin-left: 35px;
+}
+.longLine4{
+    width: 119px;
+    height: 1px;
+    background-color: #C3995D;
+    position: absolute;
+    top: 40px;
+    left: 35px;
+}
+.shortLine4{
+    width: 100px;
+    height: 1px;
+    background-color: #C3995D;
+    position: absolute;
+    top: 42px;
+    left: 45px;
+}
+.longLine5{
+    width: 149px;
+    height: 1px;
+    background-color: #C3995D;
+    position: absolute;
+    top: 40px;
+    left: 35px;
+}
+.shortLine5{
+    width: 126px;
+    height: 1px;
+    background-color: #C3995D;
+    position: absolute;
+    top: 42px;
+    left: 46px;
+}
+.longLine6{
+    width: 178px;
+    height: 1px;
+    background-color: #C3995D;
+    position: absolute;
+    top: 40px;
+    left: 35px;
+}
+.shortLine6{
+    width: 150px;
+    height: 1px;
+    background-color: #C3995D;
+    position: absolute;
+    top: 42px;
+    left: 49px;
+}
+.word{
+    font-size: 18px;
+    line-height: 25px;
+}
