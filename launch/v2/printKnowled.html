@@ -93,25 +93,25 @@
                 </a>
                 <div class="word" style="display: none">
                     <p class="subTitle">字体问题</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;①某些字体库描述方法不同，笔画交叠部分输出后会出透叠，要小心！</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;②包含中英文特殊字符的段落文本容易出问题，如“■，@，★，○”等。</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;③使用新标准的 GBK 字库来解决偏僻字丢失的问题。</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;④笔画太细的字体，最好不要使用多于3色的混叠，如（C10 M30 Y80）等，同理，也不适用于深色底反白色字。避免不了的状况下，需要给反白字勾边，适用底色近似色或者某一印刷单色（通常是黑 K）。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、某些字体库描述方法不同，笔画交叠部分输出后会出透叠，要小心！</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、包含中英文特殊字符的段落文本容易出问题，如“■，@，★，○”等。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、使用新标准的 GBK 字库来解决偏僻字丢失的问题。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4、笔画太细的字体，最好不要使用多于3色的混叠，如（C10 M30 Y80）等，同理，也不适用于深色底反白色字。避免不了的状况下，需要给反白字勾边，适用底色近似色或者某一印刷单色（通常是黑 K）。</p>
                     <p class="subTitle">渐变的问题</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;①常见的问题是这样：如 红色→黑色 的渐变， 设置错误： （M100→K100）中间会很难看！ 正确的设置应该是这样：（M100 → M100 K100）仔细分析一下就明白了，其他情况类推。</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;②透明渐变，是适用于网络图形的办法，灰度图也可，但完稿输出不可以，因为其空间混合模式为RGB,屏幕混合色彩同印刷CMYK 差异太大，切切注意。</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;③黑色部分的渐变不要太低阶，如 5% 黑色，由于输出时有黑色叠印选项，低于10%的黑色通常使用的替代而不是叠印，导致出问题，同样，使用纯浅色黑也要小心。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、常见的问题是这样：如 红色→黑色 的渐变， 设置错误： （M100→K100）中间会很难看！ 正确的设置应该是这样：（M100 → M100 K100）仔细分析一下就明白了，其他情况类推。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、透明渐变，是适用于网络图形的办法，灰度图也可，但完稿输出不可以，因为其空间混合模式为RGB,屏幕混合色彩同印刷CMYK 差异太大，切切注意。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、黑色部分的渐变不要太低阶，如 5% 黑色，由于输出时有黑色叠印选项，低于10%的黑色通常使用的替代而不是叠印，导致出问题，同样，使用纯浅色黑也要小心。</p>
                     <p class="subTitle">图片问题</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;①关于psd文件，有一点注意，就是你导入它后不要再做任何“破坏性***作”，比如：旋转，镜像，倾斜等，由于它的透明蒙版的关系 ，输出后会产生破碎图。</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;②还是蒙版，在coreldraw中使用也要小心些，必要时候还不如采取“置入容器”方法比较保险。</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;③分辨率和重新取样 不要在corel中做这个，“转换为位图” 的确方便，但损失的是色彩还原，要专业点，在ps中做好拿来。</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;④色彩模式，不要怪我罗嗦，这个就是老手也有错手过。 所有图片必须是 cmyk 或者 灰度和单色bitmap图，否则不能输出。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、关于psd文件，有一点注意，就是你导入它后不要再做任何“破坏性***作”，比如：旋转，镜像，倾斜等，由于它的透明蒙版的关系 ，输出后会产生破碎图。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、还是蒙版，在coreldraw中使用也要小心些，必要时候还不如采取“置入容器”方法比较保险。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、分辨率和重新取样 不要在corel中做这个，“转换为位图” 的确方便，但损失的是色彩还原，要专业点，在ps中做好拿来。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4、色彩模式，不要怪我罗嗦，这个就是老手也有错手过。 所有图片必须是 cmyk 或者 灰度和单色bitmap图，否则不能输出。</p>
                     <p class="subTitle">文字排版问题</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;很多人抱怨CD9中文字对不齐、文本框不好用、文本框不能转曲线。其实只要大家养成一个好的习惯就可以解决了 ：
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;①能用美工文字的，就不要用文本框。因为文本框转曲线好麻烦：要先画一个覆盖文本框的矩形，然后ALT+F3调出滤镜，选透明 度，选取黑色、填100%，勾选“冻结”（最重要的步骤），应用，然后解除群组，去掉不要的东西。</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;②打数字或英文时，在前、后输一个空格。</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;③文字打完，按ctrl+T，将文字字符间矩由默认的20改为0，行矩调为120%或150%、200%。这样文字就不会显得很散。</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;④最后调段落对齐，CD经常会有两行间半个字符对不齐的情况，这时可以选取几个文字按“ctrl+shift+>"或" ctrl+shit+<"组合键就可以很方便的调节。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、能用美工文字的，就不要用文本框。因为文本框转曲线好麻烦：要先画一个覆盖文本框的矩形，然后ALT+F3调出滤镜，选透明 度，选取黑色、填100%，勾选“冻结”（最重要的步骤），应用，然后解除群组，去掉不要的东西。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、打数字或英文时，在前、后输一个空格。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、文字打完，按ctrl+T，将文字字符间矩由默认的20改为0，行矩调为120%或150%、200%。这样文字就不会显得很散。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4、最后调段落对齐，CD经常会有两行间半个字符对不齐的情况，这时可以选取几个文字按“ctrl+shift+>"或" ctrl+shit+<"组合键就可以很方便的调节。</p>
                     <p class="subTitle">打印问题</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;解决方法也是很简单，就是所有图片、效果、阴影一起转成CMYK位图。打印的话，200DPI就够了，又快又好。 （文字不要转，否则看不清）</p>
                     <p class="subTitle">印前问题</p>
