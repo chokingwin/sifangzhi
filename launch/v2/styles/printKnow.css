@@ -1,0 +1,33 @@
+.printKnowContent{
+    margin: 15px 9px 0;
+    color: #693906;
+    font-family: "Microsoft Yahei";
+}
+.oneContent{
+    margin-bottom: 25px;
+    position: relative;
+}
+.titleBar{
+    height: 4px;
+    background-color: #693906;
+    border-radius: 5px;
+}
+.title{
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 10px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.word{
+    font-size: 12px;
+    line-height: 25px;
+}
+.subTitle{
+    margin-left: 25px;
+    font-size: 15px;
+    font-weight: bold;
+}
