@@ -208,7 +208,7 @@ a {
     margin-top: 38px;
 }
 .imgBox{
-    width: 1600px;
+    width: 3200px;
     height: 425px;
     position: absolute;
     z-index: -1;
@@ -243,6 +243,25 @@ a {
 .imgNum .active{
     background-color: #BBA793;
 }
+.arrow {
+    cursor: pointer;
+    display: none;
+    line-height: 39px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 2;
+    top: 180px;
+    background-color: RGBA(0,0,0,.3);
+    color: #fff;
+}
+.arrow:hover { background-color: RGBA(0,0,0,.7);}
+.banner_bar:hover .arrow { display: block;}
+.prev { left: 20px;}
+.next { right: 20px;}
 
 /*footer*/
 .footer{

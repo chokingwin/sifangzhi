@@ -75,3 +75,7 @@ var urlGet = function () {
 };
 
 
+/* ¿ØÖÆÂÖ²¥Í¼ */
+function changeBanner(index){
+
+}

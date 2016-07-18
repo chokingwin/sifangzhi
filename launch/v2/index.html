@@ -145,10 +145,15 @@
             <ul class="imgBox">
                 <li><a href="#"><img src="images/banner/banner2.jpg" alt="banner"></a></li>
                 <li><a href="#"><img src="images/banner/banner1.jpg" alt="banner"></a></li>
+                <li><a href="#"><img src="images/banner/banner2.jpg" alt="banner"></a></li>
+                <li><a href="#"><img src="images/banner/banner1.jpg" alt="banner"></a></li>
             </ul>
             <div class="imgNum">
-                <a href="#" class="active"></a><a href="#"></a>
+                <a href="javascript:void(0);" class="active" onclick="changeBanner(0)"></a>
+                <a href="javascript:void(0);" onclick="changeBanner(1)"></a>
             </div>
+            <a href="javascript:;" class="arrow prev">&lt;</a>
+            <a href="javascript:;" class="arrow next">&gt;</a>
         </div>
     </div>
 </div>
@@ -158,5 +163,98 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/ClassCommon.js"></script>
+<script>
+    $(function () {
+        var container = $('.banner_bar');
+        var list = $('.imgBox');
+        var buttons = $('.imgNum a');
+        var prev = $('.prev');
+        var next = $('.next');
+        var index = 1;
+        var len = 2;
+        var interval = 3000;
+        var timer;
+
+
+        function animate (offset) {
+            var left = parseInt(list.css('left')) + offset;
+            if (offset>0) {
+                offset = '+=' + offset;
+            }
+            else {
+                offset = '-=' + Math.abs(offset);
+            }
+            list.animate({'left': offset}, 300, function () {
+                if(left > -200){
+                    list.css('left', -800 * len);
+                }
+                if(left < (-800 * len)) {
+                    list.css('left', -800);
+                }
+            });
+        }
+
+        function showButton() {
+            buttons.eq(index-1).addClass('active').siblings().removeClass('active');
+        }
+
+        function play() {
+            timer = setTimeout(function () {
+                next.trigger('click');
+                play();
+            }, interval);
+        }
+        function stop() {
+            clearTimeout(timer);
+        }
+
+        next.bind('click', function () {
+            if (list.is(':animated')) {
+                return;
+            }
+            if (index == 2) {
+                index = 1;
+            }
+            else {
+                index += 1;
+            }
+            animate(-800);
+            showButton();
+        });
+
+        prev.bind('click', function () {
+            if (list.is(':animated')) {
+                return;
+            }
+            if (index == 1) {
+                index = 2;
+            }
+            else {
+                index -= 1;
+            }
+            animate(800);
+            showButton();
+        });
+
+        buttons.each(function () {
+            $(this).bind('click', function () {
+                if (list.is(':animated') || $(this).attr('class')=='on') {
+                    return;
+                }
+                var myIndex = parseInt($(this).attr('index'));
+                var offset = -800 * (myIndex - index);
+
+                animate(offset);
+                index = myIndex;
+                showButton();
+            })
+        });
+
+        container.hover(stop, play);
+
+        play();
+
+    });
+</script>
 </body>
 </html>
