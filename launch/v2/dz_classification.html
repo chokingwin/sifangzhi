@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>设计分类及报价</title>
+    <title>专业定制用品</title>
     <link type="text/css" rel="stylesheet" href="styles/reset.css">
-    <link type="text/css" rel="stylesheet" href="styles/calc_11.css">
+    <link type="text/css" rel="stylesheet" href="styles/bigClassCommon.css">
     <link type="text/css" rel="stylesheet" href="styles/main.css">
     <link type="text/css" rel="stylesheet" href="styles/ClassCommon.css">
 </head>
@@ -144,76 +144,29 @@
     </div>
     <div class="mainContent">
         <div class="item" style="margin:8px 8px;">
-            <!--<div class="itemTitle">展架</div>-->
             <div class="itemSelect">
                 <div>
                     <span>分&nbsp;&nbsp;&nbsp;类</span>
                     <ul>
-                        <li><a href="javascript:void(0);" class="selected" onclick="SItemClick(this)" val="传单/折页类" name="type">传单/折页类</a></li>
-                        <li><a href="javascript:void(0);" onclick="SItemClick(this)" val="海报/展架类" name="type">海报/展架类</a></li>
-                        <li><a href="javascript:void(0);" onclick="SItemClick(this)" val="大型户外广告类" name="type">大型户外广告类</a></li>
-                        <li><a href="javascript:void(0);" onclick="SItemClick(this)" val="画册/菜单类" name="type">画册/菜单类</a></li>
-                        <li><a href="javascript:void(0);" onclick="SItemClick(this)" val="名片类" name="type">名片类</a></li>
-                        <li><a href="javascript:void(0);" onclick="SItemClick(this)" val="其他设计" name="type">其他设计</a></li>
+                        <li><a href="javascript:void(0);" class="selected" onclick="SChangeIframe(this)" val="calc_08">精美纪念册</a></li>
+                        <li><a href="javascript:void(0);" onclick="SChangeIframe(this)" val="#">硬皮抄</a></li>
+                        <li><a href="javascript:void(0);" onclick="SChangeIframe(this)" val="#">文化衫</a></li>
+                        <li><a href="javascript:void(0);" onclick="SChangeIframe(this)" val="#">灯箱(户外灯箱/户内灯箱)</a></li>
+                        <li><a href="javascript:void(0);" onclick="SChangeIframe(this)" val="#">LED灯牌</a></li>
+                        <li><a href="javascript:void(0);" onclick="SChangeIframe(this)" val="#">锦旗</a></li>
+                        <li><a href="javascript:void(0);" onclick="SChangeIframe(this)" val="#">奖牌</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="itemImg">
-                <span class="img_cover"></span>
-                <span class="left_line"></span>
-                <span class="right_line"></span>
-                <div class="img_desc">
-                    <div class="img_desc_word">用途：推广 / 宣传用途：推广 / 宣传用途：推广 / 宣传用途：推广 / 宣传用途：推广 / 宣传用途：推广 / 宣传用途：推广 / 宣传</div>
-                </div>
-            </div>
-            <div class="itemTable">
-                <div class="itemOne" style="display: block;">
-                    <table>
-                        <tbody>
-                        <tr>
-                            <td>创作等级</td>
-                            <td>
-                                <ul>
-                                    <li><a href="javascript:void(0);" class="selected" onclick="SItemOneClick(this)"
-                                           val="中级设计师" name="createLevel">中级设计师</a></li>
-                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="高级设计师"
-                                           name="createLevel">高级设计师</a></li>
-                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="设计总监"
-                                           name="createLevel">设计总监</a></li>
-                                </ul>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="itemOne" style="display: none;">
-                    LOGO、门面设计、网页装修设计、产品包装装潢、视频剪辑、鸟瞰图等，需联系人工报价
-                </div>
-            </div>
-            <div class="calc">
-                <button type="button" class="calcBtn" onclick="calc()">计算报价</button>
-            </div>
-            <div class="itemResult"></div>
-            <div class="itemTip">
-                <div class="tipTab">
-                    <ul>
-                        <li class="DetailsTCur"><a href="javascript:void(0);">售后保障</a></li>
-                        <li><a href="javascript:void(0);">配送方式</a></li>
-                        <li><a href="javascript:void(0);">制作须知</a></li>
-                    </ul>
-                </div>
-                <div class="tipContent">
-                    <div class="tipOne" style="display: none;">3</div>
-                    <div class="tipOne" style="display: none;">2</div>
-                    <div class="tipOne" style="display: block;">1</div>
-                </div>
+            <div class="iframe">
+                <iframe src="calc_08.html" id="iframepage" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="1781" width="784" onLoad="iFrameHeight()"></iframe>
             </div>
         </div>
     </div>
 </div>
 
 <script src="js/jquery.min.js"></script>
-<script src="js/calc_11.js"></script>
 <script src="js/ClassCommon.js"></script>
+<script src="js/bigClassCommon.js"></script>
 </body>
 </html>
