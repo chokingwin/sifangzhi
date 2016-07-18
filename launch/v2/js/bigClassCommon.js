@@ -11,7 +11,6 @@ $(function(){
 
     //重新选择分类 并 选择 iframe
     $("a").attr('class','');
-    console.log(parameter);
     $("a[val='"+parameter+"']").attr('class','selected');
 
     $("#iframepage").attr('src',parameter+'.html');
