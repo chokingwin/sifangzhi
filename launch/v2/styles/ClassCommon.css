@@ -171,13 +171,10 @@
     box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1);
     /*border-top: #6A3906 solid 9px;*/
 }
-
-.tipTab li{
-    float: right;
-    margin-left: -15px;
+/*.tipTab2{
+    position: relative;
 }
-
-.DetailsTCur > .tipTab > a{
+.tipTab2 a{
     display: inline-block;
     height: 60px;
     width: 144px;
@@ -190,13 +187,63 @@
     background-color: #FFFFFF;
     border-radius: 5px;
     box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1);
+    /!*border-top: #6A3906 solid 9px;*!/
+}
+.tipTab2 a:nth-child(1){
+    position: absolute;
+    z-index: 13;
+    left: 0;
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1);
+}
+.tipTab2 a:nth-child(2){
+    position: absolute;
+    z-index: 12;
+    left: 144px;
+    margin-left: -15px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.tipTab2 a:nth-child(3){
+    position: absolute;
+    z-index: 11;
+    left: 288px;
+    margin-left: -30px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.tipTab2 .top{
+    z-index: 14;
+}*/
+.tipTab li{
+    float: right;
+    margin-left: -15px;
+}
+
+/*.DetailsTCur > .tipTab > a{
+    display: inline-block;
+    height: 60px;
+    width: 144px;
+    line-height: 51px;
+    font-size: 16px;
+    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
+    font-weight: bold;
+    text-align: center;
+    color: #6A3906;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1);
     border-top: #6A3906 solid 9px;
+}*/
+.DetailsTCur{
+    border-top: #6A3906 solid 9px;
+    line-height: 60px;
+}
+.DetailsTCur a{
+    line-height: 51px;
 }
 
 .tipContent{
     position: absolute;
     left: 0;
-    top: 50px;
+    top: 200px;
     width: 752px;
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);

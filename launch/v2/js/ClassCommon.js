@@ -8,12 +8,24 @@
 });*/
 
 $(".tipTab ul li").mouseenter(function(){
-    $(this).siblings().removeClass('DetailsTCur').end().addClass('DetailsTCur');
+    //$(this).siblings().removeClass('DetailsTCur').end().addClass('DetailsTCur');
     //a ±Í«©
-    $(this).children().css({
+    /*$(this).children().css({
         'border-top': '#6A3906 solid 9px',
         'line-height': '51px'
-    });
+    });*/
+    $('.tipContent div').hide().eq($(this).index()).show();
+});
+
+$(".tipTab2 a").mouseenter(function(){
+    //$(this).siblings().removeClass('top').end().addClass('top');
+    //a ±Í«©
+    /*$(this).children().css({
+     'border-top': '#6A3906 solid 9px',
+     'line-height': '51px'
+     });*/
+    $(this).children().css()
+    $(this).css({'z-index':14});
     $('.tipContent div').hide().eq($(this).index()).show();
 });
 
@@ -73,9 +85,3 @@ var urlGet = function () {
     }
     return aGET;
 };
-
-
-/* øÿ÷∆¬÷≤•Õº */
-function changeBanner(index){
-
-}
