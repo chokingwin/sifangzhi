@@ -7,7 +7,7 @@
 /* calc_*.html中用到的样式 */
 .mainContent{
     width: 800px;
-    min-height: 1781px;
+    /*min-height: 1781px;*/
     background-color: #F1F1F1;
     float: right;
     margin-top: 38px;
@@ -243,16 +243,23 @@
 .tipContent{
     position: absolute;
     left: 0;
-    top: 200px;
+    top: 50px;
     width: 752px;
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
     background-color: #FFFFFF;
 }
 .tipOne {
-    width: 100%;
-    height: 200px;
-    font-size: 30px;
-    line-height: 200px;
-    text-align: center;
+    margin: 20px 14px;
+    font-size: 13px;
+    font-family: "Microsoft Yahei", "微软雅黑";
+    color: #6A3906;
+    text-align: left;
+    line-height: 25px;
+}
+.tipOne .title{
+    margin-left: 0;
+}
+.tipOne p{
+    margin-left: 20px;
 }
