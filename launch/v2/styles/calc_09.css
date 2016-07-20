@@ -9,7 +9,7 @@
 /*itemSelect*/
 .itemSelect{
     margin: 15px 10px;
-    height: 29px;
+    height: 58px;
     font-size: 14px;
     font-weight: bold;
     font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
@@ -116,7 +116,6 @@
 
 /*itemOne*/
 .itemOne{
-    border: #693906 solid 1px;
     margin: 5px 10px;
 }
 .itemOne input{
@@ -127,4 +126,18 @@
 }
 .itemOne span{
     margin: 0 5px;
+}
+
+.contact{
+    color: #693906;
+    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
+    font-size: 20px;
+    margin: 20px;
+    display: inline-block;
+}
+.itemOne .aLink{
+    color: #693906;
+    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
+    font-size: 20px;
+    margin: 20px;
 }

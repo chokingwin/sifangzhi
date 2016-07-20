@@ -23,7 +23,7 @@ a{
     text-decoration: none;
 }
 /*清浮动*/
-.clearfix:after{content: ""display:block;clear: both}
+.clearfix:after{content: "";display:block;clear: both}
 .clearfix{zoom: 1}
 
 .fl{

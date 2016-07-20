@@ -1,0 +1,21 @@
+
+/*iframeContent*/
+.iframeContent{
+    width: 784px;
+    /*min-height: 1781px;*/
+    background-color: #F1F1F1;
+}
+.contact span{
+    color: #693906;
+    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
+    font-size: 20px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.contact a{
+    color: #693906;
+    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
+    font-size: 20px;
+    margin: 20px;
+}

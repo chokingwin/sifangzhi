@@ -133,6 +133,9 @@ function SItemClick(obj) {
         case '拉网展架':
             $('.itemOne').hide().eq(2).show();
             break;
+        default :
+            $('.itemOne').hide().eq(3).show();
+            break;
     }
 
     allPrice.type = value;

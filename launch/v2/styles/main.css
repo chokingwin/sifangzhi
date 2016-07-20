@@ -265,6 +265,7 @@ a {
 
 /*footer*/
 .footer{
+    margin-top: 20px;
     font: 14px/1.5 "PingFang SC", Helvetica, "Helvetica Neue", "微软雅黑", Tahoma, Arial, sans-serif;
     text-align: center;
 }
