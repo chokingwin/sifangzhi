@@ -67,9 +67,8 @@
     border: none;
     display: none;
 }
-#tsgySelect {
+.tsgySelect{
     float: left;
-    display: inline-block;
     width: 25px;
     height: 25px;
     line-height: 25px;
@@ -78,7 +77,11 @@
     background-color: #FFFFFF;
     padding: 1px;
 }
-#tsgySelect:hover {
+.tsgySelect:hover {
+    border: #ABAAAB solid 2px;
+    background-color: #693906;
+}
+tr:nth-child(9) .selected{
     border: #ABAAAB solid 2px;
     background-color: #693906;
 }

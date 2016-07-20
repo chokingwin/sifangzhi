@@ -37,6 +37,9 @@
     background:linear-gradient(#e4e0ba, #f7d9aa);
     position: relative;
 }
+.itemImg span{
+    margin: 0;
+}
 .img_cover{
     position: absolute;
     z-index: 5;

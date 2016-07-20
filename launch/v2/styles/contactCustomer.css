@@ -5,17 +5,13 @@
     /*min-height: 1781px;*/
     background-color: #F1F1F1;
 }
-.contact span{
-    color: #693906;
-    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
-    font-size: 20px;
-    margin: 20px;
+.contact{
+    text-align: center;
+    margin: 50px;
+}
+.contact a{
     display: inline-block;
 }
-
-.contact a{
-    color: #693906;
-    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
-    font-size: 20px;
-    margin: 20px;
+.contact a img{
+    width: 150px;
 }

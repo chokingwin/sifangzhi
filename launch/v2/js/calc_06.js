@@ -106,14 +106,12 @@ function inputChange(obj){
 
 function selectTsgy(obj){
     var name = obj.attributes['name'].value;
-    if(obj.className == 'selected'){
-        obj.className = "";
-        obj.style.backgroundColor = '#FFFFFF';
+    if(obj.className == 'tsgySelect selected'){
+        obj.className = "tsgySelect";
         BaojiaJson_KP['tsgy'] = '';
         allPrice.tsgyBaoJia = '';
     }else {
-        obj.className = "selected";
-        obj.style.backgroundColor = '#693906';
+        obj.className = "tsgySelect selected";
         BaojiaJson_KP['tsgy'] = '磁条/烫金等需联系人工报价';
         allPrice.tsgyBaoJia = '这部分需要人工额外报价';
     }

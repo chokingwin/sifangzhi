@@ -157,14 +157,12 @@ function SItemChange(obj){
 
 function selectTsgy(obj){
     var name = obj.attributes['name'].value;
-    if(obj.className == 'selected'){
-        obj.className = "";
-        obj.style.backgroundColor = '#FFFFFF';
+    if(obj.className == 'tsgySelect selected'){
+        obj.className = "tsgySelect";
         BaojiaJson_BGJ['tsgy'] = '';
         allPrice.tsgyBaoJia = '';
     }else {
-        obj.className = "selected";
-        obj.style.backgroundColor = '#693906';
+        obj.className = "tsgySelect selected";
         BaojiaJson_BGJ['tsgy'] = '特殊形状';
         allPrice.tsgyBaoJia = '这部分需要人工额外报价';
     }

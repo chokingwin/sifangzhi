@@ -127,17 +127,19 @@
 .itemOne span{
     margin: 0 5px;
 }
-
-.contact{
-    color: #693906;
-    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
-    font-size: 20px;
-    margin: 20px;
-    display: inline-block;
-}
 .itemOne .aLink{
     color: #693906;
     font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ";
     font-size: 20px;
     margin: 20px;
+}
+.contact{
+    text-align: center;
+    margin: 50px;
+}
+.contact a{
+    display: inline-block;
+}
+.contact a img{
+    width: 150px;
 }

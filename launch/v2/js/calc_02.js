@@ -3,7 +3,7 @@
  */
 
 //画册的报价json数据组
-var BaojiaJson_XCD = {
+var BaojiaJson_HC = {
     'caizhi':'铜版纸',
     'chicun':'A4及以下',
     'keshu':'157',
@@ -30,14 +30,14 @@ var allPrice = {
 var priceTable_157 = new Array;
 
 priceTable_157['8'] =  new Array;
-priceTable_157['12'] =  new Array;
+/*priceTable_157['12'] =  new Array;
 priceTable_157['16'] =  new Array;
 priceTable_157['20'] =  new Array;
 priceTable_157['24'] =  new Array;
 priceTable_157['28'] =  new Array;
 priceTable_157['32'] =  new Array;
 priceTable_157['36'] =  new Array;
-priceTable_157['40'] =  new Array;
+priceTable_157['40'] =  new Array;*/
 
 priceTable_157['8']['500'] = 800;
 priceTable_157['8']['1000'] = 1040;
@@ -46,7 +46,7 @@ priceTable_157['8']['3000'] = 1700;
 priceTable_157['8']['5000'] = 2350;
 priceTable_157['8']['10000'] = 4400;
 
-priceTable_157['12']['500'] = 1200;
+/*priceTable_157['12']['500'] = 1200;
 priceTable_157['12']['1000'] = 1400;
 priceTable_157['12']['2000'] = 1950;
 priceTable_157['12']['3000'] = 2450;
@@ -100,9 +100,9 @@ priceTable_157['40']['1000'] = 3700;
 priceTable_157['40']['2000'] = 5050;
 priceTable_157['40']['3000'] = 6750;
 priceTable_157['40']['5000'] = 9750;
-priceTable_157['40']['10000'] = 18100;
+priceTable_157['40']['10000'] = 18100;*/
 
-
+/*
 //200克铜版纸（封面200克内157克）
 var priceTable_200 = new Array;
 
@@ -177,7 +177,7 @@ priceTable_200['40']['1000'] = 3800;
 priceTable_200['40']['2000'] = 5200;
 priceTable_200['40']['3000'] = 7050;
 priceTable_200['40']['5000'] = 10100;
-priceTable_200['40']['10000'] = 18900;
+priceTable_200['40']['10000'] = 18900;*/
 
 function SItemClick(obj) {
     var parobj = obj.parentNode.parentNode; //ul
@@ -203,8 +203,7 @@ function SItemClick(obj) {
     };
     //找出tbody中的所有tr
     var trObj = obj.parentNode.parentNode.parentNode.parentNode.parentNode.children;
-    console.log(name);
-    console.log(value);
+
     if(name=='caizhi' && value!='铜版纸'){
         $('#qqLink_01').css(qqLinkStyleShow);
         //隐藏下面的所有tr
@@ -212,14 +211,17 @@ function SItemClick(obj) {
             trObj[i].style.display = 'none';
         }
         $('.calcBtn').css('display','none');
-    }else if(name=='chichun' && value!='A4及以下'){
-        console.log(1);
+        if($('.itemResult').html() != '')
+            $('.itemResult').css('display','none');
+    }else if(name=='chicun' && value!='A4及以下'){
         $('#qqLink_02').css(qqLinkStyleShow);
         //隐藏下面的所有tr
         for(var i=2;i<trObj.length;i++){
             trObj[i].style.display = 'none';
         }
         $('.calcBtn').css('display','none');
+        if($('.itemResult').html() != '')
+            $('.itemResult').css('display','none');
     }else{
         //var currentQQLink_02 = $('#qqLink_02').css('display');
         //var currentQQLink_01 = $('#qqLink_01').css('display');
@@ -228,6 +230,8 @@ function SItemClick(obj) {
         //}
         $('#qqLink_01').css(qqLinkStyleDefault);
         $('.calcBtn').css('display','block');
+        if($('.itemResult').html() != '')
+            $('.itemResult').css('display','block');
 
         for(var i=0;i<trObj.length;i++){
             trObj[i].style.display = 'table-row';
@@ -236,8 +240,8 @@ function SItemClick(obj) {
     /**************针对QQ上架按钮链接做的特殊处理********结束*********************/
 
     //更新报价json数组中对应的name项
-    BaojiaJson_XCD[name] = value;
-    console.log(BaojiaJson_XCD);
+    BaojiaJson_HC[name] = value;
+    console.log(BaojiaJson_HC);
 
     //动态刷新计价表
     if($('.itemResult').html() != '')
@@ -246,8 +250,8 @@ function SItemClick(obj) {
 
 function SItemChange(obj){
     var name = obj.attributes['name'].value;
-    BaojiaJson_XCD[name] = obj.value;
-    console.log(BaojiaJson_XCD);
+    BaojiaJson_HC[name] = obj.value;
+    console.log(BaojiaJson_HC);
 
     //动态刷新计价表
     if($('.itemResult').html() != '')
@@ -259,11 +263,11 @@ function displayZhuangBiao(obj){
     if(obj.className == "selected") {
         obj.className = "";
         $('#'+name).css('display','none');
-        BaojiaJson_XCD[name] = '';
+        BaojiaJson_HC[name] = '';
     }else {
         obj.className = "selected";
         $('#'+name).css('display','inline-block');
-        BaojiaJson_XCD[name] = $('#'+name+' option:selected').text();
+        BaojiaJson_HC[name] = $('#'+name+' option:selected').text();
     }
 
     //动态刷新计价表
@@ -277,11 +281,11 @@ function displayFuMo(obj){
     if(obj.className == "selected") {
         obj.className = "";
         $('#'+name).css('display','none');
-        BaojiaJson_XCD[name] = '';
+        BaojiaJson_HC[name] = '';
     }else {
         obj.className = "selected";
         $('#'+name).css('display','inline-block');
-        BaojiaJson_XCD[name] = $('#'+name+' option:selected').text();
+        BaojiaJson_HC[name] = $('#'+name+' option:selected').text();
     }
     //动态刷新计价表
     if($('.itemResult').html() != '')
@@ -290,15 +294,13 @@ function displayFuMo(obj){
 
 function selectTsgy(obj){
     var name = obj.attributes['name'].value;
-    if(obj.className == 'selected'){
-        obj.className = "";
-        obj.style.backgroundColor = '#FFFFFF';
-        BaojiaJson_XCD['tsgy'] = '';
+    if(obj.className == 'tsgySelect selected'){
+        obj.className = "tsgySelect";
+        BaojiaJson_HC['tsgy'] = '';
         allPrice.tsgyBaoJia = '';
     }else {
-        obj.className = "selected";
-        obj.style.backgroundColor = '#693906';
-        BaojiaJson_XCD['tsgy'] = '烫金/烫银/压点线/凹凸/压痕等工艺';
+        obj.className = "tsgySelect selected";
+        BaojiaJson_HC['tsgy'] = '烫金/烫银/压点线/凹凸/压痕等工艺';
         allPrice.tsgyBaoJia = '这部分需要人工额外报价';
     }
 
@@ -308,29 +310,31 @@ function selectTsgy(obj){
 }
 
 function calc(){
-    console.log(BaojiaJson_XCD);
+    console.log(BaojiaJson_HC);
 
     //计算基础部分价格
-    console.log('克数：'+BaojiaJson_XCD.keshu);
-    console.log('P数：'+BaojiaJson_XCD.pishu);
-    console.log('数量：'+BaojiaJson_XCD.count);
-    switch (BaojiaJson_XCD.keshu){
+    console.log('克数：'+BaojiaJson_HC.keshu);
+    console.log('P数：'+BaojiaJson_HC.pishu);
+    console.log('数量：'+BaojiaJson_HC.count);
+    switch (BaojiaJson_HC.keshu){
         case '157':
-            allPrice.jichuBaoJia = priceTable_157[BaojiaJson_XCD.pishu][BaojiaJson_XCD.count];
+            //allPrice.jichuBaoJia = priceTable_157[BaojiaJson_HC.pishu][BaojiaJson_HC.count];
+            allPrice.jichuBaoJia = priceTable_157[BaojiaJson_HC.pishu][BaojiaJson_HC.count];
             break;
         case '200':
-            allPrice.jichuBaoJia = priceTable_200[BaojiaJson_XCD.pishu][BaojiaJson_XCD.count];
+            //allPrice.jichuBaoJia = priceTable_200[BaojiaJson_HC.pishu][BaojiaJson_HC.count];
+            allPrice.jichuBaoJia = priceTable_200[BaojiaJson_HC.pishu][BaojiaJson_HC.count];
             break;
     }
 
     //清空普通工艺里的 装裱 报价
     allPrice.ptgyBaoJia.zhuangbiao = '';
     //判断普通工艺里的 折页类是否选择
-    if(BaojiaJson_XCD.zhuangbiao){
-        if(BaojiaJson_XCD.zhuangbiao == '骑马钉') {
+    if(BaojiaJson_HC.zhuangbiao){
+        if(BaojiaJson_HC.zhuangbiao == '骑马钉') {
             allPrice.ptgyBaoJia.zhuangbiao = 0;
         }
-        else if(BaojiaJson_XCD.zhuangbiao == '无线胶装'){
+        else if(BaojiaJson_HC.zhuangbiao == '无线胶装'){
             allPrice.ptgyBaoJia.zhuangbiao = 550;
         }else{
             allPrice.ptgyBaoJia.zhuangbiao = 650;
@@ -339,19 +343,19 @@ function calc(){
     //清空普通工艺里的 覆膜 报价
     allPrice.ptgyBaoJia.fumo = '';
     //判断普通工艺里的 覆膜类是否选择
-    if(BaojiaJson_XCD.fumo){
-        switch(BaojiaJson_XCD.fumo){
+    if(BaojiaJson_HC.fumo){
+        switch(BaojiaJson_HC.fumo){
             case '封面封底单面覆光膜':
-                allPrice.ptgyBaoJia.fumo = parseInt(BaojiaJson_XCD.count) * 0.12;
+                allPrice.ptgyBaoJia.fumo = parseInt(BaojiaJson_HC.count) * 0.12;
                 break;
             case '封面封底双面覆光膜':
-                allPrice.ptgyBaoJia.fumo = parseInt(BaojiaJson_XCD.count) * 0.12 * 2;
+                allPrice.ptgyBaoJia.fumo = parseInt(BaojiaJson_HC.count) * 0.12 * 2;
                 break;
             case '封面封底单面覆哑膜':
-                allPrice.ptgyBaoJia.fumo = parseInt(BaojiaJson_XCD.count) * 0.12;
+                allPrice.ptgyBaoJia.fumo = parseInt(BaojiaJson_HC.count) * 0.12;
                 break;
             case '封面封底双面覆哑膜':
-                allPrice.ptgyBaoJia.fumo = parseInt(BaojiaJson_XCD.count) * 0.12 * 2;
+                allPrice.ptgyBaoJia.fumo = parseInt(BaojiaJson_HC.count) * 0.12 * 2;
                 break;
         }
     }
@@ -386,9 +390,9 @@ function showPriceTable(){
         '</tr>'+
         '<tr>'+
         '<td>条目</td>'+
-        '<td>'+BaojiaJson_XCD.keshu+'克'+BaojiaJson_XCD.caizhi+BaojiaJson_XCD.chicun+' '+BaojiaJson_XCD.count+'本</td>'+
-        '<td>'+BaojiaJson_XCD.zhuangbiao+' '+ BaojiaJson_XCD.fumo +'</td>'+
-        '<td>'+BaojiaJson_XCD.tsgy+'</td>'+
+        '<td>'+BaojiaJson_HC.keshu+'克'+BaojiaJson_HC.caizhi+BaojiaJson_HC.chicun+' '+BaojiaJson_HC.count+'本</td>'+
+        '<td>'+BaojiaJson_HC.zhuangbiao+' '+ BaojiaJson_HC.fumo +'</td>'+
+        '<td>'+BaojiaJson_HC.tsgy+'</td>'+
         '</tr>'+
         '<tr>'+
         '<td>价格</td>'+
@@ -399,11 +403,11 @@ function showPriceTable(){
         '<tr>'+
         '<td>计算公式</td>';
     if(allPrice.ptgyBaoJia.zheye != '' && allPrice.ptgyBaoJia.fumo != ''){
-        html += '<td colspan="3">'+allPrice.jichuBaoJia+' + '+allPrice.ptgyBaoJia.zheye+' + '+ '0.12 * '+BaojiaJson_XCD.count+' * '+fumo[BaojiaJson_XCD.fumo]+' = '+allPrice.allBaoJia+'</td>';
+        html += '<td colspan="3">'+allPrice.jichuBaoJia+' + '+allPrice.ptgyBaoJia.zheye+' + '+ '0.12 * '+BaojiaJson_HC.count+' * '+fumo[BaojiaJson_HC.fumo]+' = '+allPrice.allBaoJia+'</td>';
     }else if(allPrice.ptgyBaoJia.zheye != ''){
         html += '<td colspan="3">'+allPrice.jichuBaoJia+' + '+allPrice.ptgyBaoJia.zheye+' = '+allPrice.allBaoJia+'</td>';
     }else if(allPrice.ptgyBaoJia.fumo != ''){
-        html += '<td colspan="3">'+allPrice.jichuBaoJia+' + '+ '0.12 * '+BaojiaJson_XCD.count+' * '+fumo[BaojiaJson_XCD.fumo]+' = '+allPrice.allBaoJia+'</td>';
+        html += '<td colspan="3">'+allPrice.jichuBaoJia+' + '+ '0.12 * '+BaojiaJson_HC.count+' * '+fumo[BaojiaJson_HC.fumo]+' = '+allPrice.allBaoJia+'</td>';
     }else {
         html += '<td colspan="3">'+allPrice.jichuBaoJia+'</td>';
     }

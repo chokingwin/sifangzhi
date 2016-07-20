@@ -126,15 +126,27 @@ function SItemClick(obj) {
     switch (value){
         case 'X展架&门型展架':
             $('.itemOne').hide().eq(0).show();
+            $('.calcBtn').css('display','block');
+            if($('.itemResult').html() != '')
+                $('.itemResult').css('display','block');
             break;
         case '易拉宝':
             $('.itemOne').hide().eq(1).show();
+            $('.calcBtn').css('display','block');
+            if($('.itemResult').html() != '')
+                $('.itemResult').css('display','block');
             break;
         case '拉网展架':
             $('.itemOne').hide().eq(2).show();
+            $('.calcBtn').css('display','block');
+            if($('.itemResult').html() != '')
+                $('.itemResult').css('display','block');
             break;
         default :
             $('.itemOne').hide().eq(3).show();
+            $('.calcBtn').css('display','none');
+            if($('.itemResult').html() != '')
+                $('.itemResult').css('display','none');
             break;
     }
 
