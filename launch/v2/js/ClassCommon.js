@@ -68,7 +68,10 @@ function SChangeIframe(obj) {
     //获取 value
     var value = obj.attributes['val'].value;
 
-    $("#iframepage").attr('src',value+'.html');
+    if(value.substr(0,15) == 'contactCustomer')
+        $("#iframepage").attr('src',value.substr(0,15)+'.html');
+    else
+        $("#iframepage").attr('src',value+'.html');
 }
 
 //菜单重定向

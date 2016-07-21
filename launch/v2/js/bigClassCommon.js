@@ -13,7 +13,10 @@ $(function(){
     $("a").attr('class','');
     $("a[val='"+parameter+"']").attr('class','selected');
 
-    $("#iframepage").attr('src',parameter+'.html');
+    if(parameter.substr(0,15) == 'contactCustomer')
+        $("#iframepage").attr('src',parameter.substr(0,15)+'.html');
+    else
+        $("#iframepage").attr('src',parameter+'.html');
 
 });
 
