@@ -6,6 +6,11 @@
     background-color: #F1F1F1;
 }
 
+/*itemImg*/
+.itemImg{
+    background: url("../images/mpItemImg.jpg");
+}
+
 /*itemSelect*/
 .itemSelect{
     margin: 15px 0 0 10px;

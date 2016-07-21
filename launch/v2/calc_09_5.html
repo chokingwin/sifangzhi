@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>设计分类及报价</title>
+    <title>联系客服报价</title>
     <link type="text/css" rel="stylesheet" href="styles/reset.css">
-    <link type="text/css" rel="stylesheet" href="styles/calc_11.css">
+    <link type="text/css" rel="stylesheet" href="styles/calc_09.css">
     <link type="text/css" rel="stylesheet" href="styles/main.css">
     <link type="text/css" rel="stylesheet" href="styles/ClassCommon.css">
 </head>
@@ -149,12 +149,13 @@
                 <div>
                     <span>分&nbsp;&nbsp;&nbsp;类</span>
                     <ul>
-                        <li><a href="javascript:void(0);" class="selected" onclick="SItemClick(this)" val="传单/折页类" name="type">传单/折页类</a></li>
-                        <li><a href="javascript:void(0);" onclick="SItemClick(this)" val="海报/展架类" name="type">海报/展架类</a></li>
-                        <li><a href="javascript:void(0);" onclick="SItemClick(this)" val="大型户外广告类" name="type">大型户外广告类</a></li>
-                        <li><a href="javascript:void(0);" onclick="SItemClick(this)" val="画册/菜单类" name="type">画册/菜单类</a></li>
-                        <li><a href="javascript:void(0);" onclick="SItemClick(this)" val="名片类" name="type">名片类</a></li>
-                        <li><a href="javascript:void(0);" onclick="SItemClick(this)" val="其他设计" name="type">其他设计</a></li>
+                        <li><a href="javascript:void(0);" onclick="SItemClick(this)" val="X展架&门型展架"
+                               name="type">X展架&门型展架</a></li>
+                        <li><a href="javascript:void(0);" onclick="SItemClick(this)" val="易拉宝" name="type">易拉宝</a></li>
+                        <li><a href="javascript:void(0);" onclick="SItemClick(this)" val="拉网展架" name="type">拉网展架</a></li>
+                        <li><a href="javascript:void(0);" onclick="SItemClick(this)" val="指示牌/挂画架" name="type">指示牌/挂画架</a></li>
+                        <li><a href="javascript:void(0);" class="selected" onclick="SItemClick(this)" val="画框" name="type">画框</a></li>
+                        <li><a href="javascript:void(0);" onclick="SItemClick(this)" val="人像架" name="type">人像架</a></li>
                     </ul>
                 </div>
             </div>
@@ -163,41 +164,159 @@
                 <span class="left_line"></span>
                 <span class="right_line"></span>
                 <div class="img_desc">
-                    <div class="img_desc_word">用途：推广 / 宣传用途：推广 / 宣传用途：推广 / 宣传用途：推广 / 宣传用途：推广 / 宣传用途：推广 / 宣传用途：推广 / 宣传</div>
+                    <div class="img_desc_word">用途：体积小，容易安装，适用于各种户内户外展示</div>
                 </div>
             </div>
             <div class="itemTable">
-                <div class="itemOne" style="display: block;">
+                <div class="itemOne" style="display: none;">
                     <table>
                         <tbody>
                         <tr>
-                            <td>创作等级</td>
+                            <td>材&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;料</td>
                             <td>
                                 <ul>
                                     <li><a href="javascript:void(0);" class="selected" onclick="SItemOneClick(this)"
-                                           val="中级设计师" name="createLevel">中级设计师</a></li>
-                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="高级设计师"
-                                           name="createLevel">高级设计师</a></li>
-                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="设计总监"
-                                           name="createLevel">设计总监</a></li>
+                                           val="韩式架(铁杆)" name="cailiao" type="X展架&门型展架">韩式架(铁杆)</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="美式架(铝合金)"
+                                           name="cailiao" type="X展架&门型展架">美式架(铝合金)</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="注水式门型展架"
+                                           name="cailiao" type="X展架&门型展架">注水式门型展架</a></li>
                                 </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>规&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格</td>
+                            <td>
+                                <ul>
+                                    <li><a href="javascript:void(0);" class="selected" onclick="SItemOneClick(this)"
+                                           val="60*160cm(PVC)" name="guige" type="X展架&门型展架">60*160cm(PVC)</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="80*180cm(PVC)"
+                                           name="guige" type="X展架&门型展架">80*180cm(PVC)</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="120*200cm(PVC)"
+                                           name="guige" type="X展架&门型展架">120*200cm(PVC)</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>选&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;购</td>
+                            <td>
+                                <ul>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="画幅"
+                                           name="xuangou" type="X展架&门型展架">画幅</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="架子"
+                                           name="xuangou" type="X展架&门型展架">架子</a></li>
+                                    <li><a href="javascript:void(0);" class="selected" onclick="SItemOneClick(this)"
+                                           val="一整套" name="xuangou" type="X展架&门型展架">一整套</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量</td>
+                            <td>
+                                <input type="text" value="1" name="count" belong="X展架&门型展架"
+                                       onchange="inputChange(this)">
                             </td>
                         </tr>
                         </tbody>
                     </table>
                 </div>
                 <div class="itemOne" style="display: none;">
-                    LOGO、门面设计、网页装修设计、产品包装装潢、视频剪辑、鸟瞰图等，需联系人工报价
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>材&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;料</td>
+                            <td>
+                                <ul>
+                                    <li><a href="javascript:void(0);" class="selected" onclick="SItemOneClick(this)"
+                                           val="普通塑钢" name="cailiao" type="易拉宝">普通塑钢</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="加厚塑钢"
+                                           name="cailiao" type="易拉宝">加厚塑钢</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="铝合金"
+                                           name="cailiao" type="易拉宝">铝合金</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>规&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格</td>
+                            <td>
+                                <ul>
+                                    <li><a href="javascript:void(0);" class="selected" onclick="SItemOneClick(this)"
+                                           val="80*200cm(PVC)" name="guige" type="易拉宝">80*200cm(PVC)</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>选&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;购</td>
+                            <td>
+                                <ul>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="画幅"
+                                           name="xuangou" type="易拉宝">画幅</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="架子"
+                                           name="xuangou" type="易拉宝">架子</a></li>
+                                    <li><a href="javascript:void(0);" class="selected" onclick="SItemOneClick(this)"
+                                           val="一整套" name="xuangou" type="易拉宝">一整套</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量</td>
+                            <td>
+                                <input type="text" value="1" name="count" belong="易拉宝" onchange="inputChange(this)">
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="itemOne" style="display: none;">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>材&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;料</td>
+                            <td>
+                                <ul>
+                                    <li><a href="javascript:void(0);" class="selected" onclick="SItemOneClick(this)"
+                                           val="厚铁杆(优质带螺丝塑料件厚强度大10倍)" name="cailiao"
+                                           type="拉网展架">厚铁杆(优质带螺丝塑料件厚强度大10倍)</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>规&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格</td>
+                            <td>
+                                <span>2.3m&nbsp;*&nbsp;</span><input type="text" value="3" belong="拉网展架" name="geshu"
+                                                                     onchange="inputChange(this)"><span>格</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>选&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;购</td>
+                            <td>
+                                <ul>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="画幅"
+                                           name="xuangou" type="拉网展架">画幅</a></li>
+                                    <li><a href="javascript:void(0);" onclick="SItemOneClick(this)" val="架子"
+                                           name="xuangou" type="拉网展架">架子</a></li>
+                                    <li><a href="javascript:void(0);" class="selected" onclick="SItemOneClick(this)"
+                                           val="一整套" name="xuangou" type="拉网展架">一整套</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="itemOne" style="display: block;">
+                    <div class="contact">
+                        <a target="_blank"
+                           href="http://wpa.qq.com/msgrd?v=3&uin=2182013969&site=qq&menu=yes"><img border="0"
+                                                                                                   src="images/qqTalk.png"
+                                                                                                   alt="乐彩印刷竭诚为您服务"
+                                                                                                   title="乐彩印刷竭诚为您服务"/></a>
+                    </div>
                 </div>
             </div>
             <div class="calc">
                 <a href="javascript:void(0);" class="calcBtn" onclick="calc()">计算报价</a>
             </div>
             <div class="itemResult"></div>
-            <div class="confirm clearfix">
-                <a href="javascript:void(0);" class="confirmBtn" onclick="confirmOrder()"></a>
-            </div>
-            <div class="confirmResult"></div>
             <div class="itemTip">
                 <div class="tipTab">
                     <ul>
@@ -260,9 +379,8 @@
 <div class="footer comWidth">
     <p>Copyright © 2016 sfzlion.com All Rights Reserved | 粤ICP备 16062991号</p>
 </div>
-
 <script src="js/jquery.min.js"></script>
-<script src="js/calc_11.js"></script>
+<script src="js/calc_09.js"></script>
 <script src="js/ClassCommon.js"></script>
 </body>
 </html>

@@ -30,7 +30,7 @@ $(".tipTab2 a").mouseenter(function(){
 });
 
 $(".itemImg").mouseenter(function(){
-    $(".img_cover").stop().animate({opacity: "0.5"});
+    $(".img_cover").stop().animate({opacity: "0.8"});
     $(".left_line").stop().animate({opacity: "1",left:"150px"});
     $(".right_line").stop().animate({opacity: "1",right:"150px"});
     $(".img_desc").stop().animate({opacity: "1",top: "0"});

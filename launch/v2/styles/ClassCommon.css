@@ -7,7 +7,7 @@
 /* calc_*.html中用到的样式 */
 .mainContent{
     width: 800px;
-    /*min-height: 1781px;*/
+    min-height: 1781px;
     background-color: #F1F1F1;
     float: right;
     margin-top: 38px;
@@ -37,7 +37,7 @@
     background:linear-gradient(#e4e0ba, #f7d9aa);
     position: relative;
 }
-.itemImg span{
+.itemOne .itemImg span{
     margin: 0;
 }
 .img_cover{
@@ -146,6 +146,21 @@
 }
 .resultTable td:first-child {
     text-align: center;
+}
+
+
+/*confirm*/
+.confirm{
+    margin-top: 20px;
+    display: none;
+}
+.confirmBtn{
+    float: right;
+    width: 112px;
+    height: 113px;
+    display: inline-block;
+    background: url("../images/confirmBtn.png") no-repeat left top;
+    margin-right: 16px;
 }
 
 /*itemTip*/

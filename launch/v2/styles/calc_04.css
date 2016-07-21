@@ -6,6 +6,14 @@
     background-color: #F1F1F1;
 }
 
+/*itemImg*/
+/*.itemOne .itemImg span{
+    margin: 0;
+}*/
+.itemImgBG{
+    background: url("../images/hbItemImg.jpg");
+}
+
 /*itemSelect*/
 .itemSelect{
     margin: 15px 0 0 10px;

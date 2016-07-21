@@ -207,4 +207,38 @@ function showPriceTable(){
     ;
 
     $('.itemResult').append(html);
+    $('.confirm').show();
+}
+
+function confirmOrder(){
+    var html =
+        '<div class="resultTable">'+
+        '<table>'+
+        '<tbody>'+
+        '<tr>'+
+        '<td>姓名</td>'+
+        '<td>黄先生</td>'+
+        '</tr>'+
+        '<tr>'+
+        '<td>电话</td>'+
+        '<td>15622288780</td>'+
+        '</tr>'+
+        '<tr>'+
+        '<td>QQ</td>'+
+        '<td>2227936863</td>'+
+        '</tr>'+
+        '<tr>'+
+        '<td>微信</td>'+
+        '<td>Herry0509</td>'+
+        '</tr>'+
+        '<tr>'+
+        '<td>邮箱</td>'+
+        '<td>2227936863@qq.com</td>'+
+        '</tr>'+
+        '</tbody>'+
+        '</table>'+
+        '</div>'
+    ;
+
+    $('.confirmResult').append(html);
 }

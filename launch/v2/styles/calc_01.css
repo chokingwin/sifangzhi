@@ -5,6 +5,11 @@
     /*min-height: 1781px;*/
     background-color: #F1F1F1;
 }
+/*itemImg*/
+.itemImg{
+    background: url("../images/xcdItemImg.jpg");
+}
+
 /*itemTable*/
 .itemTable{
     margin-top: 30px;
